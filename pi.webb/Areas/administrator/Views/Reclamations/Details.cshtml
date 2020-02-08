@@ -1,0 +1,133 @@
+﻿@model pi.domaine.Entities.Reclamation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Head_Layout.cshtml";
+}
+
+<h2>Details</h2>
+@using (Html.BeginForm("Repondre", "Responses"))
+{
+    @Html.AntiForgeryToken()
+
+
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div>
+
+
+        <h4>Reclamation</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Titre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Titre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.contenu)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.contenu)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.etat)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.etat)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TypeReclamation)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TypeReclamation)
+            </dd>
+
+        </dl>
+
+        @if (Model.Urlimage != null)
+        {
+            <div class="col-md-8 ml-auto mr-auto">
+                <img class="img rounded" src="~/assets/uploads/@Model.Urlimage">
+            </div>
+        }
+        @if (ViewBag.nombre == "1")
+        {
+            <div class="col-md-8 ml-auto mr-auto">
+                <br /> <br />
+
+                <p class="blockquote blockquote-primary">
+
+
+                    @ViewBag.content
+
+                    <br>
+                    <br>
+                    <small>
+                        - Noaa
+                    </small>
+                </p>
+            </div>
+            <p>
+
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+
+        }@if (ViewBag.nombre == "0")
+        {
+            <div class="col-md-8 ml-auto mr-auto">
+                <br /> <br />
+
+                <p class="blockquote blockquote-primary">
+
+
+                    This Claim is still in progress
+                    <br>
+                    <br>
+                    <small>
+                        - Noaa
+                    </small>
+                </p>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.idReclamation }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+
+        }
+
+
+
+    </div>
+
+
+}
+@if (ViewBag.nombre == "1")
+{
+    using (Html.BeginForm("Satisfaction", "Reclamations"))
+    {
+        @Html.HiddenFor(Model => Model.idReclamation)
+
+        <div class="form-group">
+            Type
+            <div class="col-md-10">
+                @Html.EnumDropDownListFor(model => model.SatisfactionEnum, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SatisfactionEnum, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <span class="btn btn-raised btn-round btn-default btn-file">
+            <span class="fileinput-new">Send</span>
+            <span class="fileinput-exists"></span>
+            <input type="submit" value="send" class="form-control" />
+        </span>
+
+    }
+}

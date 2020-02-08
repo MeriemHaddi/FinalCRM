@@ -1,0 +1,75 @@
+﻿@model IEnumerable<pi.domaine.Entities.lignecmd>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.product.Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product.Product_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+     
+        <th></th>
+    </tr>
+@if (Model.Count()==0 )
+{
+    <tr><td><h2>Votre Panier est vide</h2> </td> </tr>
+
+}
+     else   {
+  foreach (var item in Model) {
+    <tr>
+  
+        <td>
+            @Html.DisplayFor(modelItem => item.product.Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product.Product_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix)
+        </td>
+      
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LignecmdId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LignecmdId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LignecmdId })
+        </td>
+       
+      
+    </tr>
+
+  
+}
+    }
+
+</table>
+
+@Html.ActionLink("Retour shopping", "Index","Product")    |
+@Html.ActionLink("Bon commande", "bca","Factdev", new { id = @ViewBag.prixtot }, null)    |
+@Html.ActionLink("Enregistrer devis", "ajdevis", "Factdev", new { id = @ViewBag.prixtot }, null)    |
+@*@Html.ActionLink("Payer","payment", "Factdev")*@
+@Html.ActionLink("Payer","payment", "Factdev",new { id = @ViewBag.prixtot }, null)     |
+@ViewBag.prixtot
+
+
+

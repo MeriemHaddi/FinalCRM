@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "fillList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>fillList</h2>
+
+@Html.DropDownList("productlist", ViewBag.productlistname as SelectList, "selecti produit pls")
+
+
+

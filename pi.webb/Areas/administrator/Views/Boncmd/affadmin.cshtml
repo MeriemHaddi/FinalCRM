@@ -1,0 +1,89 @@
+﻿@model IEnumerable<pi.domaine.Entities.Boncmd>
+
+@{
+    ViewBag.Title = "affadmin";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li class="active">ADMIN</li>
+            <li>
+                @Html.ActionLink("Gerer Bons", "affadmin", "Boncmd")
+
+            </li>
+
+            <li>
+                @Html.ActionLink("Statistique", "LineChart", "VisualizeData")           |
+
+              
+            </li>
+        </ol>
+
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Bons admin</h1>
+
+
+        </div>
+    </div>
+</div>
+
+
+<table class="table">
+    <tr>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.reference)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prixb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.codeqr)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+     
+        <td>
+            @Html.DisplayFor(modelItem => item.reference)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prixb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date)
+        </td>
+      
+        <td>
+            <img src="/Boncmd/BarcodeImage?barcodeText= @Html.DisplayFor(modelItem => item.codeqr)" />
+        </td>         
+        <td>
+            @Html.ActionLink("Confirmé", "confirmation", new { id=item.BoncmdId }) |
+            @Html.ActionLink("Annulé", "annulation", new { id=item.BoncmdId }) |
+         
+        </td>
+    </tr>
+}
+
+</table>

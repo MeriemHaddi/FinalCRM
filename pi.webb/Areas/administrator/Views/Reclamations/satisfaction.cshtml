@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "statisfaction";
+    Layout = "~/Views/Shared/Head_Layout.cshtml";
+}
+<h2>Statistique Sur La Satisfaction</h2>
+@Html.ActionLink("Retour", "AllReclamation", "Reclamations")
+
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Type', 'Nombre'],
+                ['Not Satisfied', @ViewBag.t],
+                ['Satisfied', @ViewBag.f],
+                ['Very Satisfied', @ViewBag.rr],
+
+            ]);
+
+            var options = {
+                title: 'Statistique Sur La Satisfaction De Nos Clients ',
+                is3D: true,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+</body>
+</html>
+

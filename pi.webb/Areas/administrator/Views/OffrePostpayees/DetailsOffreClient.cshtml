@@ -1,0 +1,48 @@
+﻿@model pi.domaine.Entities.OffrePostpayee
+@{
+    ViewBag.Title = "DetailsOffreClient";
+    Layout = "~/Areas/administrator/Views/Shared/_crmLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class=" text-center col-sm-6 col-xs-12">
+            @{ string path = "~/Content/Uploads/" + Model.img;}
+            <img src="@Url.Content(path)" width="100" height="100" />
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+            <table border="0" cellpadding="0" cellspacing="0" width="200" style="border-collapse: collapse; width: 200pt;">
+                <colgroup> <col width="80" span="2" style="width: 60pt;"> </colgroup>
+                <tbody>
+                    <tr height="20" style="height: 15.0pt;">
+                        <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong>@Html.DisplayFor(model => model.Titre) </strong> </td>
+                    </tr>
+                    <tr height="20" style="height: 15.0pt;">
+                        <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong>@Html.DisplayFor(model => model.Description)</strong></td>
+                    </tr>
+
+                    @if (Model.Id_Pack != null)
+                    {
+                        <tr height="20" style="height: 15.0pt;">
+                            <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong>avec le pack @Html.DisplayFor(model => model.Id_Pack)</strong></td>
+                        <tr height="20" style="height: 15.0pt;">
+                            <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong>Prix hors pack @Html.DisplayFor(model => model.PrixHorsPack)</strong></td>
+                        </tr>
+                        </tr>}
+
+                    <tr height="20" style="height: 15.0pt;">
+                        <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong> Jusqu'au    @Html.DisplayFor(model => model.date_fin)</strong></td>
+                    </tr>
+
+                </tbody>
+            </table><p>&nbsp;</p>
+            <h1><strong>à seulement<span style="color: #ff0000;">@Html.DisplayFor(model => model.Prix)</span></strong></h1>
+        </div>
+    </div>
+    @if (Model.Id_Pack != null)
+    {
+        <a href="@Url.Action("GetPack", "OffrePostpayees", new { id = Model.Id_Offre })" class=" btn btn-lg btn-primary "> Voir le pack </a>
+    }
+</div>

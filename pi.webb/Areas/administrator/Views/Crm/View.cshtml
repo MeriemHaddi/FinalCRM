@@ -1,0 +1,99 @@
+﻿@model pi.domaine.Entities.Product
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Areas/administrator/Views/Shared/Boutiques.cshtml";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryProduct.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryProduct.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shop.shop_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shop.shop_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.In_Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.In_Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Out_Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Out_Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nbrvue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nbrvue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idProduct }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

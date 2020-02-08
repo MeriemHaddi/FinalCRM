@@ -1,0 +1,143 @@
+﻿@model IEnumerable<pi.domaine.Entities.factdev>
+
+@{
+    ViewBag.Title = "affdevis";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li class="active">Produit</li>
+
+            <li>
+                @Html.ActionLink("Panier", "panii", "Lignecmd")           |
+
+                @Html.ActionLink("Mes devis", "affdevis", "Factdev")          |
+
+                @Html.ActionLink("Historique", "histo", "Factdev")          |
+
+                @Html.ActionLink("Mes bons", "affclt", "Boncmd")
+            </li>
+        </ol>
+
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Devis</h1>
+
+
+        </div>
+    </div>
+</div>
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.reference)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etat)
+        </th>
+      
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.reference)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date)
+        </td>
+      <td>
+                @*hg.product = servProduct.GetById(hg.ProductId);
+
+                        if (hg.quantite > hg.product.Quantity)
+                        {
+                            a++; //red
+                        }
+                        else if (hg.product.Quantity - hg.quantite >= 0 && hg.product.Quantity - hg.quantite <= 3)
+                        {
+                            b++; //yellow
+                        }
+                        else
+                        {
+                            c++; //vert
+                        }*@
+
+@foreach (var it in item.lignes)
+{ 
+          if (it.quantite>it.product.Quantity)
+          {
+            <font color="red">hors stock</font>
+          }
+          else if (it.product.Quantity - it.quantite >=0 && it.product.Quantity - it.quantite <= 3)
+          {
+            <font color="yellow">produit krib</font>
+          }
+          else if (ViewBag.redd == 0 && ViewBag.yell == 0 && ViewBag.gree == 0)
+          {
+         <font>  Vide </font>   
+          }
+          else
+          {
+            <font color="green">bon</font>
+          }
+}
+
+      </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.FactdevId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.FactdevId }) |
+
+       @foreach (var it in item.lignes)
+       {
+           if (it.quantite > it.product.Quantity)
+           {
+            <font>vous ne pouvez pas acheter</font>
+           }
+           else
+           {
+            @Html.ActionLink("Acheter", "Delete", new { id = item.FactdevId })
+           }
+
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+        </td>
+    </tr>
+}
+
+</table>

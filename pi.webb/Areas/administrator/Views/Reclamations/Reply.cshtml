@@ -1,0 +1,75 @@
+﻿@model pi.domaine.Entities.Reclamation
+@{
+    ViewBag.Title = "Reply";
+    Layout = "~/Views/Shared/Head_Layout.cshtml";
+}
+
+<h2>Reply</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+    @*<div class="col-md-8 ml-auto mr-auto">
+        <div class="media-area">
+
+            <div class="media">
+                <a class="pull-left" href="#pablo">
+
+                </a>
+
+                <div class="media-body">
+                    <h5 class="media-heading">@Model.Title </h5><small>@Model.Date</small>
+                    <p>@Model.Content</p>
+
+
+                </div>
+            </div>
+        </div>*@
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+                @Html.HiddenFor(Model => Model.idReclamation)
+                <h3 class="title">@Model.Titre</h3>
+                <p>@Model.contenu</p>
+            </div>
+            @if (Model.Urlimage != null)
+            {
+                <div class="col-md-8 ml-auto mr-auto">
+                    <img src="~/Content/uploads/@Model.Urlimage">
+                </div>
+            }
+
+            @Html.TextBox("texte", null, new { @style = " height:70px; width:1000px;" })
+            <div class="media media-post">
+                <a class="pull-left author" href="#pablo">
+
+                </a>
+
+                <div class="media-footer">
+                    <h4 class="text-center">Respond to a claim<br></h4>
+
+                    <span class="btn btn-raised btn-round btn-default btn-file">
+                        <span class="fileinput-new"></span>
+                        <span class="fileinput-exists"></span>
+                        <input type="submit" value="send" class="form-control" />
+                    </span>
+
+
+                </div>
+                @Html.ActionLink("Back to list", "AllReclamation", "Reclamations")
+            </div> <!-- end media-post -->
+
+        </div>
+    </div>
+
+}
+
+
+
+

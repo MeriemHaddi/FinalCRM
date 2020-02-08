@@ -1,0 +1,77 @@
+﻿@model IEnumerable<pi.domaine.Entities.Shop>
+
+@{ Layout = "~/Areas/administrator/Views/Shared/Shops.cshtml";
+}
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+
+            <li>
+                <a class="breadcrumb-home" href="../../index.html">
+                    <span class="icon-Home_Page">
+                    </span><span class="bch-txt">Accueil</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="../index.html">
+                    Shops
+                </a>
+            </li>
+
+            <li class="active"></li>
+
+        </ol>
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Shops</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fw">
+    <script src=@Url.Content("https://www.google.com/recaptcha/api.js")></script>
+    <div class="container">
+        <div class="options-tab-peaple contact-tab">
+            <ul class="nav"></ul>
+            <div class="tab-content">
+                <div class="tab-pane active">
+
+                    <div class="container-fw">
+                        <div class="container">
+                            <section id="communique-presse">
+                                <ul class="publication-list">
+                                    @foreach (var item in Model)
+                                    {
+
+                                        <li class="media">
+
+                                            <div class="media-left">
+                                                <div class="pubdate">
+
+                                                    <span class="month">@Html.DisplayFor(modelItem => item.Shop_Location)</span>
+
+                                                </div>
+                                                <a>See Location</a>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <h2 class="media-heading">@Html.DisplayFor(modelItem => item.shop_name)</h2>
+                                                <span class="day">Oprning :@Html.DisplayFor(modelItem => item.Opening_Time)</span><br />
+                                                <span class="day">Closing:@Html.DisplayFor(modelItem => item.closing_Time)</span>
+                                                <p>Services:@Html.DisplayFor(modelItem => item.Service)</p>
+
+
+                                                @Html.ActionLink("Products", "Details", new { id = item.id_Shop }, new { @class = "btn btn-primary btn-xs" })
+                                                @Html.ActionLink("Agents", "DetailsAgent", new { id = item.id_Shop }, new { @class = "btn btn-primary btn-xs" })
+
+
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            </section>
+                        </div>
+                    </div>

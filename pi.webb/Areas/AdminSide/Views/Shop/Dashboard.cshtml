@@ -1,0 +1,59 @@
+﻿
+@{
+
+    Layout = "~/Areas/AdminSide/Views/Shared/Statistics.cshtml";
+}
+
+
+<head>
+
+
+
+
+
+
+
+
+    <div id="chart_container">
+
+        <canvas id="bar_chart"></canvas>
+    </div>
+    <script>
+
+    var repArray =@Html.Raw(Json.Encode(ViewBag.REP));
+    var nbrvue =@Html.Raw(Json.Encode(ViewBag.NBRVUE));
+    var ctx=$("#bar_chart");
+    var barchart =new Chart(ctx,{
+
+
+        type:'bar',
+        data:{labels:repArray,
+            datasets:[{
+
+                label:"Nombre des vu des produits",
+                data:nbrvue,
+                backgroundColor:["rgba(242,166,54,.5)","rgba(145,65,72,.5)","rgba(74,25,92,.5)"],
+
+                borderColor:["rgb(242,166,54)","rgb(145,65,72)","rgb(74,25,92)"]
+            }]
+
+        },
+        options:{
+            maintainAspectRatio:false,
+            scales:{xAxes:[{ticks:{beginAtZero:true}}]}
+
+
+
+
+        },
+
+
+
+    });
+
+    </script>
+
+
+
+
+

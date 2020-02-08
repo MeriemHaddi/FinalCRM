@@ -1,0 +1,89 @@
+﻿@model pi.domaine.Entities.Post
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/administrator/Views/Shared/_forum.cshtml";
+}
+<link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+
+<h2>Details</h2>
+
+@*<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Clients)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PostId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@
+<div class="ui comments">
+<div class="comment">
+    <a class="avatar">
+    </a>
+    <div class="content">
+        <a class="author">
+            @Html.DisplayFor(model => model.Client.Name)
+        </a>
+        <div class="metadata">
+            <div class="date">
+                @Html.DisplayFor(model => model.Date)
+            </div>
+        </div>
+        <div class="text">
+            <img style="height: 318px;" src="@Url.Content(Model.Picture)">
+            <h3>
+                Title:  @Html.DisplayFor(model => model.Title)
+            </h3>
+            <p>
+                Description: @Html.DisplayFor(model => model.Description)
+            </p>
+        </div>
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+        
+
+    </div>
+</div>
+        </div>

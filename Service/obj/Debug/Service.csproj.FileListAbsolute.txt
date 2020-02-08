@@ -1,0 +1,119 @@
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\Service.dll.config
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\Service.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\Service.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\pi.data.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\pi.domaine.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\pi.servicepattern.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\pi.data.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\pi.domaine.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\pi.servicepattern.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\obj\Debug\Service.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\Service\obj\Debug\Service.pdb
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\Service.dll.config
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\Service.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\Service.pdb
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\pi.data.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\pi.domaine.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\pi.servicepattern.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\pi.data.pdb
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\pi.domaine.pdb
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\pi.servicepattern.pdb
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\crm_pi\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\crm_pi\Service\obj\Debug\Service.dll
+C:\Users\ASUS\Desktop\crm_pi\Service\obj\Debug\Service.pdb
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\Service.dll.config
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\Service.dll
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\Service.pdb
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\EntityFramework.dll
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.data.dll
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.domaine.dll
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.servicepattern.dll
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.data.pdb
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.data.dll.config
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.domaine.pdb
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.domaine.dll.config
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.servicepattern.pdb
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\pi.servicepattern.dll.config
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\EntityFramework.xml
+C:\Users\marion\Downloads\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marion\Downloads\crm_pi\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Users\marion\Downloads\crm_pi\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\marion\Downloads\crm_pi\Service\obj\Debug\Service.dll
+C:\Users\marion\Downloads\crm_pi\Service\obj\Debug\Service.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Service.dll.config
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Service.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Service.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\EntityFramework.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Gma.QrCodeNet.Encoding.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\itextsharp.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Owin.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Owin.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.data.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.domaine.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.servicepattern.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Stripe.net.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.Helpers.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.Mvc.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.Razor.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.WebPages.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Twilio.AspNet.Common.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Twilio.AspNet.Mvc.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Twilio.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.data.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.data.dll.config
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.domaine.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.domaine.dll.config
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.servicepattern.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\pi.servicepattern.dll.config
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\EntityFramework.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\itextsharp.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Owin.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Stripe.net.pdb
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Stripe.net.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.Helpers.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.Mvc.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.Razor.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.WebPages.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Twilio.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\marion\source\repos\crm_pi\Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\marion\source\repos\crm_pi\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Users\marion\source\repos\crm_pi\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\marion\source\repos\crm_pi\Service\obj\Debug\Service.dll
+C:\Users\marion\source\repos\crm_pi\Service\obj\Debug\Service.pdb

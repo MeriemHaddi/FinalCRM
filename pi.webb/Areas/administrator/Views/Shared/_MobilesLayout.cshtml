@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta property="og:description" content="Retrouvez toute la liste des smartphones, tablettes et accessoires mobiles disponibles dans nos boutiques Djezzy, à travers toute l'Algérie. Prix de vente, description et détails.
+" />
+    <meta property="og:title" content="Djezzy boutique | Smartphones, tablettes, accessoires" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Djezzy" />
+    <meta property="og:image" content=@Url.Content("~/wp-content/uploads/2017/08/all1-1.jpg" )/>
+    <link rel="image_src" href=@Url.Content("~/wp-content/uploads/2017/08/all1-1.jpg") />
+
+    <meta name="twitter:title" content="Djezzy boutique | Smartphones, tablettes, accessoires" />
+    <meta name="twitter:description" content="Retrouvez toute la liste des smartphones, tablettes et accessoires mobiles disponibles dans nos boutiques Djezzy, à travers toute l'Algérie. Prix de vente, description et détails.
+" />
+    <meta name="twitter:image" content=@Url.Content("~/wp-content/uploads/2017/08/all1-1.jpg") />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <script async src="//"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4750143419582280",
+        enable_page_level_ads: true
+    });
+    </script>
+    <meta name="keywords" content="Djezzy, Algérie, Algeria, Mobiles, smartphones, tablettes, accessoires," />
+    <meta name="description" content="Retrouvez toute la liste des smartphones, tablettes et accessoires mobiles disponibles dans nos boutiques Djezzy, à travers toute l&#039;Algérie. Prix de vente, description et détails.
+" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel="stylesheet" href=@Url.Content("~/wp-content/themes/djezzy/assets/css/core.mince31.css?v=19" )type="text/css">
+
+    <script type="text/javascript" src=@Url.Content("~/wp-content/themes/djezzy/assets/js/jquery.notready.min.js")></script>
+    <script type="text/javascript">
+        var ajaxurl = '../teq-ajax.html';
+    </script>
+
+
+
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+   
+
+        <nav id="m-navmaster">
+            <div>
+                <div id="m-search">
+                    <form method="get" action="http://www.djezzy.dz/recherche/">
+                        <input name="search" id="m-search-input" type="search" class="form-control" placeholder="Recherche" />
+                    </form>
+                </div>
+                <ul>
+                    <li>
+                        <span><span class="m-icn djz-language"></span>Langues</span>
+                        <ul>
+
+
+                            <li class="active">
+                                <a title="Français">
+                                    Français
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+
+
+                    <li>
+                        <a title="E-Paiement" href="https://moncompte.djezzy.dz/fr/guest/recharge">
+                            E-Paiement
+                        </a>
+                    </li>
+
+
+
+
+
+
+                    <li>
+                        <a title="Nos boutiques" href="../nos-boutiques/index.html">
+                            Nos boutiques
+                        </a>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <span>
+                            <span class="m-icn djz-tools"></span>
+                            Mon espace
+                        </span>
+                        <ul>
+                            <li><a title="Nous contacter" href="../nous-contacter/index.html">Nous contacter</a></li>
+                            <li><a title="E-paiement" href="https://moncompte.djezzy.dz/fr/guest/recharge">E-paiement</a></li>
+                            <li><a title="Web Chat" href="https://chat.djezzy.com/Code/webchatLogin.php">Web Chat</a></li>
+                            <li><a title="Imtiyaz" href="http://www.imtiyaz.dz/djezzyweb/">Imtiyaz</a></li>
+                            <li><a title="Guide configuration" href="../accueil/tout-sur-la-3g/guide-de-configuration/index.html">Guide configuration</a></li>
+                            <li><a title="Selfcare" href="../index.html">Selfcare</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+        </nav>
+        <div id="search-form">
+            <div class="mfp-bg in"></div>
+            <div id="search">
+                <div id="search-container">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <form method="get" action="http://www.djezzy.dz/recherche/" role="search">
+                            <div id="search-content">
+                                <div class="input-group">
+                                    <form action="#">
+                                        <input name="search" type="text" class="form-control input-lg" placeholder="Recherche..." />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-info btn-lg" type="submit">
+                                                <i class="djz-search"></i>
+                                            </button>
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav -->
+        <div id="nav-master">
+            <div class="container">
+                <ul id="portal-switch">
+                    <li><a title="Particuliers" href="../index.html">Particuliers</a></li>
+                    <li><a title="Entreprises" href="../entreprises/index.html">Entreprises</a></li>
+                    <li><a title="Djezzy" href="../djezzy/index.html">Djezzy</a></li>
+                </ul>        <ul id="utilities" class="nav navbar-nav">
+
+
+
+                    <li><a target="_blank" title="E-Paiement" class="ut-lnk bg-primary" href="https://moncompte.djezzy.dz/fr/guest/recharge">E-Paiement</a></li>
+
+
+
+
+
+                    <li><a title="Nos boutiques" class="ut-lnk " href="../nos-boutiques/index.html">Nos boutiques</a></li>
+
+
+
+
+
+
+                    <li>
+                        <div id="my-djezzy" class="dropdown ">
+                            <button class="dropdown-toggle " type="button" id="dropdownMenu-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Mon espace
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu--" ">
+
+                            <ul id=" mdj-links">
+                    <li>
+                        <a title="Nous contacter" href="../nous-contacter/index.html"><span class="icon-Info-Facture"></span>Nous contacter</a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="E-paiement" href="https://moncompte.djezzy.dz/fr/guest/recharge"><span class="icon-Flexy2"></span>E-paiement</a>
+                    </li>
+                    <li>
+                        <a title="Web Chat" href="https://chat.djezzy.com/Code/webchatLogin.php"><span class="icon-SMS"></span>Web Chat</a>
+                    </li>
+                    <li>
+                        <a title="Imtiyaz" href="http://www.imtiyaz.dz/djezzyweb/"><span class="icon-Cadeau-Surprise"></span>Imtiyaz</a>
+                    </li>
+                    <li>
+                        <a title="Guide configuration" href="../accueil/tout-sur-la-3g/guide-de-configuration/index.html"><span class="icon-Mobil-Connect"></span>Guide configuration</a>
+                    </li>
+                    <li>
+                        <a title="Selfcare" href="../index.html"><span class="icon-Profil-Premium"></span>Selfcare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li>
+            <div id="language-switch" class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Français            <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+
+
+
+
+
+                    <li class="active">
+                        <a title="Français">
+                            Français
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </li>
+        <li>
+            <button id="search-master" type="button">
+                <span class="djz-search"></span>
+            </button>
+        </li>
+        </ul>
+
+        </div>
+        </div>
+
+
+        <div id="nav-main" class="navbar navbar-default yamm">
+            <div class="container">
+                <div class="navbar-header navbar-header--left"><i class="ramadhan-logo" id="app-logo"></i></div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle djz-menu" data-toggle="collapse" data-target="#mynav"></button>
+                    <a id="brand-logo" class="" href="../index.html">Djezzy            </a>
+                    <button id="m-navmaster-btn" type="button" class="navbar-toggle djz-person"></button>
+                </div>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul id="menu" class="nav navbar-nav">
+
+
+
+
+                        <li class="dropdown yamm-fullwidth">
+                            <a class="menu-link dropdown-toggle" data-toggle="dropdown" href="#">Offres<b class="caret"></b></a>
+                            <div class="dropdown-menu xsubmenu">
+                                <div class="xsubmenu-nav col-sm-3">
+                                    <ul class="nav nav-pills nav-stacked">
+
+                                        <li class="active"><a href="#item-106913" data-toggle="pill">Offres Prépayées</a></li>
+
+
+                                        <li class=""><a href="#item-106912" data-toggle="pill">Offres Postpayées</a></li>
+
+
+                                        <li class=""><a href="#item-106914" data-toggle="pill">Offres Internet</a></li>
+
+
+                                        <li class=""><a href="#item-113151" data-toggle="pill">Djezzy SPECIAL</a></li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="tab-content col-sm-9">
+
+                                    <div class="tab-pane active" id="item-106913">
+                                        <div class="row">
+                                            <div class="royalSlider rsDefault">
+                                                <div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy HAYLA MAXI" target="" class="bc" href="../particuliers/offres/djezzy-hayla-maxi/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2019/10/158x228fr0-158x228.jpg") alt="Djezzy HAYLA MAXI">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy HAYLA MAXI</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy HAYLA BEZZEF" target="" class="bc" href="../particuliers/offres/djezzy-hayla-bezzef/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2019/07/158x228_vf_hayla_bezzef-1.png") alt="Djezzy HAYLA BEZZEF">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy HAYLA BEZZEF</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy HADRA" target="" class="bc" href="../particuliers/offres/djezzy-hadra/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2018/09/declinaisons-hadra-stc-haaarba2.jpg") alt="Djezzy HADRA">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy HADRA</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane " id="item-106912">
+                                        <div class="row">
+                                            <div class="royalSlider rsDefault">
+                                                <div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="DJEZZY CONFORT" target="" class="bc" href="../particuliers/offres/djezzy-confort-2/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2019/09/djezzy-confort158x228.png") alt="DJEZZY CONFORT">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">DJEZZY CONFORT</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane " id="item-106914">
+                                        <div class="row">
+                                            <div class="royalSlider rsDefault">
+                                                <div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Pack Djezzy 3ayla" target="" class="bc" href="../particuliers/offres/djezzy-modem-1/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2019/03/3ayla-famille-portrait158-228.png") alt="Pack Djezzy 3ayla">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Pack Djezzy 3ayla</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy FLEXYNET" target="" class="bc" href="../particuliers/offres/flexy-net/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2019/02/flexynet-158x228-garc-on-2.png") alt="Djezzy FLEXYNET">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy FLEXYNET</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy Internet" target="" class="bc" href="../particuliers/offres/djezzy-internet/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2018/12/posters-djezzy-internet-generique-158x228-1.png") alt="Djezzy Internet">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy Internet</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div><div>
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy Connect 4G" target="" class="bc" href="../particuliers/offres/djezzy-connect-4g/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2018/10/djezzy-connect-158-x-282-vf-2.png") alt="Djezzy Connect 4G">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy Connect 4G</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="OFFRES INTERNET" target="" class="bc" href="../particuliers/offres/offres-internet/index.html">
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">OFFRES INTERNET</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane " id="item-113151">
+                                        <div class="row">
+                                            <div class="royalSlider rsDefault">
+                                                <div>
+
+
+                                                    <div class="col-xs-4">
+                                                        <a title="Djezzy SPECIAL" target="" class="bc" href="../particuliers/offres/djezzy-special-1/index.html">
+                                                            <div class="bc-thumb">
+                                                                <img src=@Url.Content("~/wp-content/uploads/2019/06/special_web_158_228.png") alt="Djezzy SPECIAL">
+                                                            </div>
+
+                                                            <div class="bc-titles">
+                                                                <h2 class="bc-title">Djezzy SPECIAL</h2>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                        <li><a title="Services" target="" class="menu-link"  @Html.ActionLink("Service", "Service") </a></li>
+
+
+
+                        <li><a title="Mobiles" target="" class="menu-link" @Html.ActionLink("Mobiles", "Mobiles") </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="side-widget share-widget">
+                <div class="sw-container">
+                    <a class="sw-control djz-share" href="#"></a>
+                    <div class="sw-content">
+
+                        <div class="sw-share">
+                            <span>Partager sur :</span>
+                            <ul class="share-group ssk-group">
+                                <li><a class="btn-share djz-facebook ssk ssk-facebook" href="#"><span>facebook</span></a></li>
+                                <li><a class="btn-share djz-twitter ssk ssk-twitter" href="#"><span>twitter</span></a></li>
+                                <li><a class="btn-share djz-linkedin ssk ssk-linkedin" href="#"><span>linkedin</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    <div class="title-bar">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a class="breadcrumb-home" href="../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+                        </li>
+
+                        <li class="active">Mobiles</li>
+                    </ol>
+                </div>
+                <div class="page-title">
+                    <div class="container">
+                        <h1>Mobiles</h1>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-fw container-gray">
+
+                <div id="filterbar-affix" data-spy="affix" data-offset-top="300" class="container-fw container-gray container-compact">
+                    <div class="row">
+                        <div class="container">
+                            <div id="filterbar">
+                                <form class="js-mobile-form" method="post" role="filter">
+                                    <select name="marque" class="selectpicker" title="Sélectionnez la marque">
+                                        <option value="">Sélectionnez la marque</option>
+                                        <option value="condor">Condor</option>
+                                        <option value="huawei">huawei</option>
+                                        <option value="infinix">INFINIX</option>
+                                        <option value="wiko">Wiko</option>
+                                    </select>
+
+                                    <select name="type" class="selectpicker" title="Sélectionnez le type">
+                                        <option value="">Sélectionnez le type</option>
+                                        <option value="smartphones">Smartphones</option>
+                                    </select>
+
+                                    <div class="js-btn-order btn-group">
+                                        <span class="btn btng-label">Prix</span>
+                                        <button name="order" value="DESC" type="submit" class=" active btn btn-default"><span class="djz-arrow-down"></span></button>
+                                        <button name="order" value="ASC" type="submit" class=" btn btn-default"><span class="djz-arrow-up"></span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fw container-gray container-compact">
+                    <div class="container">
+                        <div class="row">
+
+                            <ul class="product-list">
+                                <style>
+                                    .product-new:before {
+                                        content: "Nouveau";
+                                    }
+
+                                    .product-promo:after {
+                                        content: "Promotion";
+                                    }
+                                </style>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="huawei-y7-prime-2018/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/02/huawei-350-x-400-pixels-150x200.jpg") alt="Huawei Y7 Prime 2018">
+
+                                        <h2 class="product-brand">huawei</h2>
+
+                                        <p class="product-name">Huawei Y7 Prime 2018</p>
+
+                                        <h3 class="product-price">27 500 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="infinix-hot-s3x/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/06/350-400-pixels-1-150x200.png") alt="INFINIX Hot S3X">
+
+                                        <h2 class="product-brand">INFINIX</h2>
+
+                                        <p class="product-name">INFINIX Hot S3X</p>
+
+                                        <h3 class="product-price">26 590 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="condor-l2-pro/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/08/condor_l2-150x200.png") alt="CONDOR L2 PRO">
+                                        
+                                        <h2 class="product-brand">Condor</h2>
+
+                                        <p class="product-name">CONDOR L2 PRO</p>
+
+                                        <h3 class="product-price">23 000 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="infinix-hot-6-x/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/07/infinix-hot-6-x-150x200.png") alt="INFINIX Hot 6 X">
+
+                                        <h2 class="product-brand">INFINIX</h2>
+
+                                        <p class="product-name">INFINIX Hot 6 X</p>
+
+                                        <h3 class="product-price">22 350 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="condor-t6/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/08/condor_t6-150x200.png") alt="CONDOR T6">
+
+                                        <h2 class="product-brand">Condor</h2>
+
+                                        <p class="product-name">CONDOR T6</p>
+
+                                        <h3 class="product-price">12 900 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="condor-t8-plus/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/08/condor_t8-150x200.png") alt="CONDOR T8 Plus">
+
+                                        <h2 class="product-brand">Condor</h2>
+
+                                        <p class="product-name">CONDOR T8 Plus</p>
+
+                                        <h3 class="product-price">12 000 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="wiko-view-xl/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/01/wiko-view-xl-150x200.png") alt="WIKO view XL">
+
+                                        <h2 class="product-brand">Wiko</h2>
+
+                                        <p class="product-name">WIKO view XL</p>
+
+                                        <h3 class="product-price">28 990 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product    product-promo " href="wiko-robby-2/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/01/wiko-robby-2-150x200.png") alt="Wiko robby 2">
+
+                                        <h2 class="product-brand">Wiko</h2>
+
+                                        <p class="product-name">Wiko robby 2</p>
+
+                                        <h3 class="product-price">16 490 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product    product-promo " href="wiko-harry/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/01/wiko-harry-150x200.png") alt="Wiko Harry">
+
+                                        <h2 class="product-brand">Wiko</h2>
+
+                                        <p class="product-name">Wiko Harry</p>
+
+                                        <h3 class="product-price">15 590 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product  product-new   " href="infinix-smart/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/07/infinix-smart-2-150x200.png" ) alt="INFINIX Smart 2">
+
+                                        <h2 class="product-brand">INFINIX</h2>
+
+                                        <p class="product-name">INFINIX Smart 2</p>
+
+                                        <h3 class="product-price">14 450 DA</h3>
+
+                                    </a>
+                                </li>
+
+                                <li class="col-xs-6 col-sm-3">
+                                    <a class="product    product-promo " href="wiko-kenny/index.html">
+                                        <img class="product-thumb" src=@Url.Content("~/wp-content/uploads/2019/01/wiko-kenny-150x200.png") alt="Wiko kenny">
+
+                                        <h2 class="product-brand">Wiko</h2>
+
+                                        <p class="product-name">Wiko kenny</p>
+
+                                        <h3 class="product-price">11 690 DA</h3>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <footer>
+                <div id="social-links" class="full">
+                    <ul>
+                        <li><a title="twitter" target="_blank" class="djz-twitter" href="https://twitter.com/djezzy"><span>twitter</span></a></li>
+                        <li><a title="facebook" target="_blank" class="djz-facebook" href="https://www.facebook.com/djezzy"><span>facebook</span></a></li>
+                        <li><a title="google-plus" target="_blank" class="djz-google-plus" href="https://plus.google.com/+DjezzyOfficial?rel=author"><span>google-plus</span></a></li>
+                        <li><a title="youtube" target="_blank" class="djz-youtube" href="https://www.youtube.com/user/djezzytube"><span>youtube</span></a></li>
+                        <li><a title="linkedin" target="_blank" class="djz-linkedin" href="http://www.linkedin.com/company/djezzy"><span>linkedin</span></a></li>
+                        <li><a title="instagram" target="_blank" class="djz-instagram" href="https://www.instagram.com/djezzy.dz/"><span>instagram</span></a></li>
+                    </ul>
+                </div>
+                <div id="secondary-links" class="full">
+                    <div class="container">
+                        <nav class="row">
+                            <ul>
+
+
+
+                                <li class="col-sm-3">
+                                    <span class="scl-title"><a title="Particuliers" href="../index.html">Particuliers</a></span>
+                                </li>
+
+
+
+                                <li class="col-sm-3">
+                                    <span class="scl-title"><a title="Entreprises" href="../entreprises/index.html">Entreprises</a></span>
+                                </li>
+
+
+
+                                <li class="col-sm-3">
+                                    <span class="scl-title"><a title="Djezzy" href="../djezzy/index.html">Djezzy</a></span>
+                                </li>
+
+
+
+                                <li class="col-sm-3">
+                                    <span class="scl-title"><a title="A PROPOS DE DJEZZY" href="../djezzy/nous-connaitre/a-propos-de-djezzy/index.html">A PROPOS DE DJEZZY</a></span>
+                                    <ul class="scl-links">
+                                        <li><a title="Services Particuliers" href="../particuliers/services/index.html">Services Particuliers</a></li>
+                                        <li><a title="Services Entreprises" href="../entreprises/services/index.html">Services Entreprises</a></li>
+                                        <li><a title="Mentions légales" href="../mentions-legales/index.html">Mentions légales</a></li>
+
+                                    </ul>
+                                </li>
+
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="info-links" class="full">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="inl-infos"></ul>                <p class="inl-copyright">© Djezzy 2019 | Tous droits réservés.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- End wrapper -->
+        <script src=@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.2/modernizr.min.js")></script>
+        <script type="text/javascript" src=@Url.Content("~/wp-content/themes/djezzy/assets/js/app.minfb74.js?v=16")></script>
+        <script type="text/javascript" src=@Url.Content("~/wp-content/themes/djezzy/assets/js/jquery.ready.min.js")></script>
+        <!-- TEQ.MON.OK -->
+        <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window, document, 'script','@Url.Content("https://www.google-analytics.com/analytics.js")', 'ga');
+
+    ga('create', 'UA-35211108-4', 'auto');
+    ga('send', 'pageview');
+        </script>
+    
+
+</body>
+</html>

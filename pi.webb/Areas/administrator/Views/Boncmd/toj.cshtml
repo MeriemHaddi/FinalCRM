@@ -1,0 +1,134 @@
+﻿@model pi.domaine.Entities.Boncmd
+
+@{
+    Layout = null;
+}
+
+
+@System.Web.Optimization.Styles.Render("~/Content/bonstyle.css")
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice template</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <div class="invoice">
+            <div class="row">
+                <div class="col-7">
+                    <img src="https://s3.eu-central-1.amazonaws.com/zl-clients-sharings/90Tech.png" class="logo">
+                </div>
+                <div class="col-5">
+                    <h1 class="document-type display-4">Bon Commande</h1>
+                    <p class="text-right"><strong>@Model.reference</strong></p>
+                    <p class="text-right"><strong>@Model.date</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <p>
+                        <strong>90TECH SAS</strong><br>
+                        6B Rue Aux-Saussaies-Des-Dames<br>
+                        57950 MONTIGNY-LES-METZ
+                    </p>
+                </div>
+                <div class="col-5">
+                    <br><br><br>
+                    <p>
+                        <strong>    A L'ATTENTION DE :</strong><br>
+                    
+                        <strong>>@ViewBag.name @ViewBag.last</strong><br>
+                        Address :  <em>@ViewBag.address</em><br>
+                        12 Rue de Carthage<br>
+                        +216 @ViewBag.phone
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+          
+            <br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>PU (DT)</th>
+                        <th>Quantite</th>
+                        <th>Total (DT)</th>      
+                    </tr>
+                </thead>
+                <tbody>
+@foreach (var item in Model.lignes)
+{
+                    <tr>
+                        <td>@item.product.Product_Name</td>
+                        <td>@item.product.Description</td>
+                        <td>@item.product.Price</td>
+                        <td class="text-right">@item.quantite</td>
+                        <td>@item.prix</td>
+                       
+                    </tr>
+}
+                  
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-8">
+                </div>
+                <div class="col-4">
+                    <table class="table table-sm text-right">
+                        <tr>
+                            <td><strong>Total </strong></td>
+                            <td class="text-right">@Model.prix DT</td>
+                        </tr>
+                        <tr>
+                            <td>Montant payé</td>
+                            <td class="text-right">@Model.prixb DT</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Il vous reste a payé</strong></td>
+                            <td class="text-right">@ViewBag.reste DT</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <p class="conditions">
+                En votre aimable règlement
+                <br>
+                Et avec nos remerciements.
+                <br><br>
+                Conditions de paiement : paiement à réception de facture, à 15 jours.
+                <br>
+                Aucun escompte consenti pour règlement anticipé.
+                <br>
+                Règlement par virement bancaire.
+                <br><br>
+                En cas de retard de paiement, indemnité forfaitaire pour frais de recouvrement : 40 euros (art. L.4413 et L.4416 code du commerce).
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <p class="bottom-page text-right">
+                90TECH SAS - N° SIRET 80897753200015 RCS METZ<br>
+                6B, Rue aux Saussaies des Dames - 57950 MONTIGNY-LES-METZ 03 55 80 42 62 - www.90tech.fr<br>
+                Code APE 6201Z - N° TVA Intracom. FR 77 808977532<br>
+                IBAN FR76 1470 7034 0031 4211 7882 825 - SWIFT CCBPFRPPMTZ
+            </p>
+        </div>
+    </div>
+    <!-- partial -->
+
+</body>
+</html>

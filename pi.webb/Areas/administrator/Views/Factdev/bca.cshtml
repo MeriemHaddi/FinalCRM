@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewBag.Title = "bca";
+
+}
+}
+
+
+@System.Web.Optimization.Styles.Render("~/Content/boncs.css")
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>offer card example</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col my-5">
+                    <div class="card colorRed cardContainer shadow-lg">
+                        <div class="card-header  text-white cardHeaderSize  d-flex flex-column justify-content-center align-items-center ">
+                            <div class="col d-flex flex-column justify-content-center align-items-center">
+                                <span class="h3 font-weight-bold">START-UP</span>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-baseline mb-5">
+                                <span class="mx-2 h4">DT</span>
+                                <span class="h1 ">@((ViewBag.qq * 10) / 100)</span>
+                               
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group m-3">
+                                <li class="list-group-item border-0 text-center "><span class="font-weight-bold spanColor">10</span> users included</li>
+                                <li class="list-group-item border-0 text-center "><span class="font-weight-bold spanColor">2GB</span> of storage</li>
+                                <li class="list-group-item border-0 text-center"><span class="font-weight-bold spanColor">Free</span> Email support</li>
+                                <li class="list-group-item border-0 text-center"><span class="font-weight-bold spanColor">Help center access</span></li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                @using (Html.BeginForm("bca", "Factdev", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    <input type="hidden" name="pp" value="@ViewBag.qq" />
+                                    <input type="hidden" name="dd" value="1" />
+                                    <input type="submit" class="btn text-white px-5  border-0" value="payer" />
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-5">
+                    <div class="card colorBlue cardContainer   shadow-lg">
+                        <div class="card-header  text-white cardHeaderSize  d-flex flex-column justify-content-center align-items-center ">
+                            <div class="col d-flex flex-column justify-content-center align-items-center">
+                                <span class="h3 font-weight-bold">BUSINESS</span>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-baseline mb-5">
+                                <span class="mx-2 h4">DT</span>
+                                <span class="h1 ">@((ViewBag.qq*15)/100)</span>
+                              
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group m-3">
+                                <li class="list-group-item border-0 text-center "><span class="font-weight-bold spanColor">100</span> users included</li>
+                                <li class="list-group-item border-0 text-center "><span class="font-weight-bold spanColor">10GB</span> of storage</li>
+                                <li class="list-group-item border-0 text-center"><span class="font-weight-bold spanColor">Free</span> Email support</li>
+                                <li class="list-group-item border-0 text-center"><span class="font-weight-bold spanColor">Help center access</span></li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                @using (Html.BeginForm("bca", "Factdev", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    <input type="hidden" name="pp" value="@ViewBag.qq" />
+                                    <input type="hidden" name="dd" value="2" />
+                                    <input type="submit" class="btn text-white px-5  border-0" value="payer" />
+                                }
+
+                            
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-5">
+                    <div class="card colorGreen cardContainer shadow-lg">
+                        <div class="card-header  text-white cardHeaderSize  d-flex flex-column justify-content-center align-items-center ">
+                            <div class="col d-flex flex-column justify-content-center align-items-center">
+                                <span class="h3 font-weight-bold">PRO</span>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-baseline mb-5">
+                                <span class="mx-2 h4">DT</span>
+                                <span class="h1 ">@((ViewBag.qq * 20) / 100)</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group m-3">
+                                <li class="list-group-item border-0 text-center "><span class="font-weight-bold spanColor">300</span> users included</li>
+                                <li class="list-group-item border-0 text-center "><span class="font-weight-bold spanColor">20GB</span> of storage</li>
+                                <li class="list-group-item border-0 text-center"><span class="font-weight-bold spanColor">Free</span> Email support</li>
+                                <li class="list-group-item border-0 text-center"><span class="font-weight-bold spanColor">Help center access</span></li>
+
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                @using (Html.BeginForm("bca", "Factdev", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    <input type="hidden" name="pp" value="@ViewBag.qq" />
+                                    <input type="hidden" name="dd" value="3" />
+                                    <input type="submit" class="btn text-white px-5  border-0" value="payer" />
+                                }
+                            
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+<!-- partial -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

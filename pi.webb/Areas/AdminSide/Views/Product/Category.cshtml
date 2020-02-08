@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Areas/AdminSide/Views/Shared/_ListProductLayout.cshtml";
+}
+
+
+<center><h2> @ViewBag.Category.CategoryName Category</h2></center>
+
+
+<p>
+    @Html.ActionLink("Create New Product", "Create")
+</p>
+<table id="mytable" class="table table-bordred table-striped">
+    <tr>
+        <th>
+            Shop
+        </th>
+        <th>
+            Category
+        </th>
+        <th>
+            Product
+        </th>
+
+        <th>
+            Price
+        </th>
+        <th>
+            Picture
+        </th>
+
+        <th>
+            Quantity
+        </th>
+        <th> Edit</th>
+        <th> Details</th>
+        <th> Delete</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Category.Products)
+    {
+        <tr>
+            <td>
+                @item.Shop.shop_name
+            </td>
+            <td>
+                @item.CategoryProduct.CategoryName
+            </td>
+            <td>
+                @item.Product_Name
+            </td>
+
+            <td>
+                @item.Price
+            </td>
+            <td>
+                @{ string path = "~/Content/Uploads/" + item.Picture;}
+                <img src="@Url.Content(path)" width="100" height="100" />
+            </td>
+
+            <td>
+                @item.Quantity
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idProduct }, new { @class = "btn btn-primary btn-xs" })
+            </td>
+            <td>
+                @Html.ActionLink("Details", "ProductDescription", new { id = item.idProduct }, new { @class = "btn btn-primary btn-xs" })
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.idProduct }, new { @class = "btn btn-primary btn-xs" })
+            </td>
+        </tr>
+    }
+
+</table>
+

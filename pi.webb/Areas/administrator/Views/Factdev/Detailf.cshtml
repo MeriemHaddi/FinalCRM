@@ -1,0 +1,80 @@
+﻿@model IEnumerable<pi.domaine.Entities.lignecmd>
+
+@{
+    ViewBag.Title = "Detailf";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li class="active">Produit</li>
+
+            <li>
+                @Html.ActionLink("Panier", "panii", "Lignecmd")           |
+
+                @Html.ActionLink("Mes devis", "affdevis", "Factdev")          |
+
+                @Html.ActionLink("Historique", "histo", "Factdev")          |
+
+                @Html.ActionLink("Mes bons", "affclt", "Boncmd")
+            </li>
+        </ol>
+
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>facture</h1>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.product.Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product.Product_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+      
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.product.Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product.Product_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix)
+        </td>
+       
+       
+    </tr>
+}
+
+</table>
+@ViewBag.prixtot |
+@Html.ActionLink("retour", "Index","Product")

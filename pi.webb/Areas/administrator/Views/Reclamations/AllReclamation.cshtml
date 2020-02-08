@@ -1,0 +1,55 @@
+﻿@model IEnumerable<pi.domaine.Entities.Reclamation>
+@{
+    ViewBag.Title = "AllReclamation";
+    Layout = "~/Views/Shared/Head_Layout.cshtml";
+}
+
+<h2>Reclamation En cours</h2>
+@*<img src="@Url.Content(~/Content/uploads/Pip)"/>*@
+@Html.ActionLink("Statistique", "stat", "Reclamations", new { })|
+@Html.ActionLink("Satisfaction", "statisfaction", "Reclamations", new { })|
+@Html.ActionLink("Reclamation Traiter", "Treated", "Reclamations")
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contenu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeReclamation)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contenu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.etat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeReclamation)
+            </td>
+            <td>
+
+
+                @Html.ActionLink("Reply", "Reply", new { id = item.idReclamation })
+
+
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<pi.domaine.Entities.OffrePostpayee>
+@{
+    ViewBag.Title = "IndexOffreClient";
+    Layout = "~/Areas/administrator/Views/Shared/_crmLayout.cshtml";
+}
+@*<div class="tab-pane active" id="item-106913">
+
+        <div class="row">
+            <div class="royalSlider rsDefault">
+                <div>
+
+
+                    @foreach (var item in Model)
+                    {
+
+
+                        <div class="col-xs-4">
+                            <a title="Djezzy HAYLA BEZZEF" target="" class="bc" href="particuliers/offres/djezzy-hayla-bezzef/index.html">
+
+                                <div class="bc-thumb">
+
+                                    @{ string path = "~/Content/Uploads/" + item.img;}
+                                    <img class="product-thumb" src="@Url.Content(path)" width="158" height="228" alt="Huawei Y7 Prime 2018">
+                                </div>
+
+                                <div class="bc-titles">
+                                    <h2 class="bc-title">@Html.DisplayFor(modelItem => item.Titre)</h2>
+                                </div>
+                            </a>
+
+                        </div>
+
+                                        }
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+@foreach (var item in Model)
+{
+    <div class="container">
+        <section class="home-offers" id="">
+            <div class="top-offer">
+                <div class="abs-container">
+                    @*<img class="border-rad" src="/wp-content/uploads/2019/10/920x260fr0.jpg" alt="">*@
+                    @{ string path = "~/Content/Uploads/" + item.img;}
+                    <img class="product-thumb" src="@Url.Content(path)">
+                    <div class="text-center">
+                        <a title="" href="" class="new-btn btn btn-primary">Plus d'infos ici</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+}
+

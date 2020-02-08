@@ -1,0 +1,26 @@
+﻿@model IEnumerable<pi.domaine.Entities.OffrePostpayee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/administrator/Views/Shared/_crmLayout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="container">
+        <section class="home-offers" id="">
+            <div class="top-offer">
+                <div class="abs-container">
+                    @*<img class="border-rad" src="/wp-content/uploads/2019/10/920x260fr0.jpg" alt="">*@
+                    @{ string path = "~/Content/Uploads/" + item.img;}
+                    <img class="product-thumb" src="@Url.Content(path)">
+                    <div class="text-center">
+                        <a title="" href="@Url.Action("DetailsOffreClient","OffrePostpayees",new { id=item.Id_Offre })" class="new-btn btn btn-primary">@item.Titre</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+}
+
+

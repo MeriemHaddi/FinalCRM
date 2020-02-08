@@ -1,0 +1,89 @@
+﻿@model pi.domaine.Entities.Agent
+
+@{
+    ViewBag.Title = "Details";
+
+    Layout = "~/Areas/AdminSide/Views/Shared/AgentDetail.cshtml";
+
+}
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li>
+                <a href="../index.html">
+                    Djezzy
+                </a>
+            </li>
+
+            <li class="active">@Html.DisplayFor(model => model.FName)</li>
+
+        </ol>
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>@Html.DisplayFor(model => model.FName)</h1>
+        </div>
+    </div>
+</div>
+
+<div class="direction-detail">
+    <div class="container-fw">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    @{ string path = "~/Content/Uploads/" + @Html.DisplayFor(model => model.LName);}
+                    <img src="@Url.Content(path)" width="300" height="350" />
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="head">
+
+                        <h2>@Html.DisplayFor(model => model.FName)</h2><br />
+
+                        <span>Shop:@Html.DisplayFor(model => model.Shop.shop_name) </span><br />
+                        <span>@Html.DisplayFor(model => model.post)</span><br />
+                        <span>Phone Number:@Html.DisplayFor(model => model.tel)</span><br />
+
+                        <ul class="social"></ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

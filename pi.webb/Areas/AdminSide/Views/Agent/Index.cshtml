@@ -1,0 +1,81 @@
+﻿@model IEnumerable<pi.domaine.Entities.Agent>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminSide/Views/Shared/Agents.cshtml";
+}
+
+<center>
+    @using (Html.BeginForm())
+    {<table>
+            <tr>
+                <td>
+                    <div>
+                        Search Agents: @Html.TextBox("searchString")
+
+                    </div>
+                </td>
+                <td>                 <input type="submit" value="Search" id="submit" />             </td>
+            </tr>
+        </table>}
+</center>
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Shop
+        </th>
+        <th>
+            Agent Name
+        </th>
+        <th>
+            Picture
+        </th>
+        <th>
+            Workplace
+        </th>
+        <th>
+            Phone number
+        </th>
+        <th>Edit</th>
+        <th>Detail</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shop.shop_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FName)
+            </td>
+            <td>
+                @{ string path = "~/Content/Uploads/" + item.LName;}
+                <img src="@Url.Content(path)" width="100" height="100" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.post)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tel)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idAgent }, new { @class = "btn btn-primary btn-xs" })
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.idAgent }, new { @class = "btn btn-primary btn-xs" })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.idAgent }, new { @class = "btn btn-primary btn-xs" })
+            </td>
+        </tr>
+    }
+
+</table>

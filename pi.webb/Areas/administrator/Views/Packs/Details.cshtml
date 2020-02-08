@@ -1,0 +1,58 @@
+﻿@model pi.domaine.Entities.Pack
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pack</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periode_Engagement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periode_Engagement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prix)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.img)
+        </dt>
+        <dd>
+            @{ string path = "~/Content/Uploads/" + Model.img;}
+            <img src="@Url.Content(path)" width="100" height="100" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Pack }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

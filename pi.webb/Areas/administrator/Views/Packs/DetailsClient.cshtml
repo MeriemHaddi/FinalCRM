@@ -1,0 +1,135 @@
+﻿@model pi.domaine.Entities.Pack
+
+@{
+    ViewBag.Title = "DetailsClient";
+    Layout = "~/Areas/administrator/Views/Shared/_PacksLayout.cshtml";
+}
+
+@*<div class="container">
+        <div class="row">
+
+            <div class=" text-center col-sm-6 col-xs-12">
+                @{ string path = "~/Content/Uploads/" + Model.img;}
+                <img src="@Url.Content(path)" width="100" height="100" />
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+                <table border="0" cellpadding="0" cellspacing="0" width="200" style="border-collapse: collapse; width: 200pt;">
+                    <colgroup> <col width="80" span="2" style="width: 60pt;"> </colgroup>
+                    <tbody>
+                        <tr height="20" style="height: 15.0pt;">
+                            <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong>@Html.DisplayFor(model => model.Titre) </strong> </td>
+                        </tr>
+                        <tr height="20" style="height: 15.0pt;">
+                            <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong>@Html.DisplayFor(model => model.Description)</strong></td>
+                        </tr>
+
+
+                        <tr height="20" style="height: 15.0pt;">
+                            <td height="20" class="xl65" dir="LTR" width="80" style="height: 15.0pt; width: 60pt;"><strong> Sur @Html.DisplayFor(model => model.Periode_Engagement) Mois</strong></td>
+                        </tr>
+
+
+                        <tr height="20" style="height: 15.0pt;">
+                            <a href="@Url.Action("listProduits","Packs", new { id = Model.Id_Pack })"> Lire </a>
+                        </tr>
+
+
+
+
+
+
+
+                    </tbody>
+                </table><p>&nbsp;</p>
+                <h1><strong>Pour seulement<span style="color: #ff0000;">@Html.DisplayFor(model => model.Prix)</span></strong></h1>
+
+            </div>
+
+        </div>
+    </div>*@
+<div class="container">
+
+    <div style="text-align: center;"><span style="font-size: 50px;"><span style="color: #eb0707;"><strong>@Html.DisplayFor(model => model.Titre)</strong></span><span></span></span></div>
+</div>
+<div class="container">
+
+    <div class="options-tab-table">
+
+        <ul class="nav " role="tablist">
+
+            <li class="col-sm-3 active">
+                <a href="#tab-target-112216" role="tab" data-toggle="tab">
+                </a>
+            </li>
+
+
+        </ul>
+
+        <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane fade in active" id="tab-target-112216">
+
+                <div class="row">
+
+                </div><div class="row">
+
+                    <div class="col-centered col-xs-12 col-sm-4">
+                        <table>
+
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <h4><span style="font-size: 40px;">Description<span></span></span></h4>
+
+                                        <span>
+                                            @Html.DisplayFor(model => model.Description)
+                                        </span>
+
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>
+                                        <h4>sur @Html.DisplayFor(model => model.Periode_Engagement)</h4>
+
+                                        <span>
+                                            Mois
+                                        </span>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h4>Pour @Html.DisplayFor(model => model.Prix) / Mois</h4>
+
+
+                                    </td>
+                                </tr>
+
+
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <a href="@Url.Action("listProduits","Packs", new { id = Model.Id_Pack })" class=" btn btn-lg btn-primary "> Voir les produits  </a>
+
+        </div>
+
+
+    </div>
+
+</div>

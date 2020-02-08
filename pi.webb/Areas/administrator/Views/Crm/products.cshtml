@@ -1,0 +1,40 @@
+﻿
+
+@model pi.domaine.Entities.Product
+<center>
+    <h3>Most view product</h3>
+</center>
+
+<ul>
+
+    @foreach (var category in ViewBag.products)
+    {
+
+        <a href="@Url.Action(" products","Crm")">
+
+            <div class="container-fw container-gray container-compact">
+                <div class="container">
+                    <div class="row">
+
+                        <ul class="product-list">
+                            <li class="col-xs-6 col-sm-3">
+                                <a class="product product-new" href="@Url.Action("ProductDescription", new { id = category.idProduct })">
+                                    <img class="product-thumb" @{ string path = "~/Content/Uploads/" + category.Picture;}
+                                    <img src="@Url.Content(path)" width="200" height="200" />
+
+                                    <h2 class="product-brand">@Html.DisplayFor(modelItem => modelItem.CategoryProduct.CategoryName)</h2>
+
+                                    <p class="product-name">@Html.DisplayFor(modelItem => modelItem.Product_Name)</p>
+
+                                    <h3 class="product-price">@Html.DisplayFor(modelItem => modelItem.Price)</h3>
+
+
+
+                                </a>
+                            </li>
+
+        </a>
+
+
+    }
+</ul>

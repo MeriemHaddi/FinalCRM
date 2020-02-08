@@ -1,0 +1,16 @@
+﻿
+<ul>
+
+    @foreach (var category in ViewBag.Categories)
+    {
+        <option value="@Url.Action("Category","Crm",new { id_Category = @category.id_Category })">
+        <li>
+            <a href="@Url.Action("Category","Crm",new { id_Category = @category.id_Category })">
+                @category.CategoryName
+            </a>
+        </li>
+        </option>
+
+
+    }
+</ul>

@@ -1,0 +1,141 @@
+﻿@model IEnumerable<pi.domaine.Entities.Post>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/administrator/Views/Shared/_forum.cshtml";
+
+}
+<link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+
+<h2>All Posts</h2>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                <div>
+                    Search by genre: @Html.TextBox("searchString")
+                </div>
+            </td>
+            <td>
+                <input type="submit" value="Search" id="submit" />
+            </td>
+        </tr>
+    </table>
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="dl-horizontal">
+    @*<tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Client.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th></th>
+        </tr>*@
+
+    @foreach (var item in Model)
+    {
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Picture)*@
+        </dt>
+
+        <dd>
+            @*<img src="@Url.Content(item.Picture)">*@
+        </dd>
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Clients)*@
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(modelItem => item.Client.Name)*@
+        </dd>
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Title)*@
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(modelItem => item.Title)*@
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Description)*@
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(modelItem => item.Description)*@
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Date)*@
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(modelItem => item.Date)*@
+        </dd>
+
+        @*<dt>
+                @Html.DisplayNameFor(model => model.State)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(modelItem => item.State)
+            </dd>*@
+        <p>
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.PostId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PostId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PostId }) |
+                @Html.ActionLink("Comment", "CreateComment", new { id = item.PostId }) |
+                @Html.ActionLink("View Comments", "IndexComment", new { id = item.PostId })*@
+
+        </p>
+        <div class="ui comments">
+            <div class="comment">
+                <a class="avatar">
+                </a>
+                <div class="content">
+                    <a class="author">
+                        @Html.DisplayFor(modelItem => item.Client.Name)
+                    </a>
+                    <div class="metadata">
+                        <div class="date">
+                            @Html.DisplayFor(modelItem => item.Date)
+
+                        </div>
+                    </div>
+                    <div class="text">
+                        <img style="height: 318px;" src="@Url.Content(item.Picture)">
+                        <h3>
+                            Title:  @Html.DisplayFor(modelItem => item.Title)
+                        </h3>
+                        <p>
+                            Description: @Html.DisplayFor(modelItem => item.Description)
+                        </p>
+                    </div>
+                    <div>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.PostId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.PostId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.PostId }) |
+                        @Html.ActionLink("View Comments", "IndexComment", new { id = item.PostId })
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    }
+
+</table>
+

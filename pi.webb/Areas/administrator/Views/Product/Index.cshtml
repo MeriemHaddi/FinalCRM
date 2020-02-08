@@ -1,0 +1,114 @@
+﻿@model IEnumerable<pi.domaine.Entities.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li class="active">Produit</li>
+
+            <li> @Html.ActionLink("Panier", "panii", "Lignecmd")           |
+
+            @Html.ActionLink("Mes devis", "affdevis", "Factdev")          |
+
+            @Html.ActionLink("Historique", "histo", "Factdev")          |
+
+            @Html.ActionLink("Mes bons", "affclt", "Boncmd")</li>
+        </ol>
+
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Produit</h1>
+
+         
+        </div>
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+
+    <div class="container-fw container-gray container-compact">
+        <div class="container">
+            <div class="row">
+
+
+                <ul class="product-list">
+
+                    <style>
+                        .product-new:before {
+                            content: "Nouveau";
+                        }
+
+                        .product-promo:after {
+                            content: "Promotion";
+                        }
+                    </style>
+@foreach (var item in Model)
+{
+                    <li class="col-xs-6 col-sm-3">
+                        <a class="product  product-new   " href="huawei-y7-prime-2018/index.html">
+
+                            <img class="product-thumb" height="80" width="60" src=@Url.Content("~/wp-content/uploads/" + @Html.DisplayFor(modelItem => item.Picture)) alt="Huawei Y7 Prime 2018">
+
+                            <p class="product-name">@Html.DisplayFor(modelItem => item.Product_Name)</p>
+
+                            <h3 class="product-price">@Html.DisplayFor(modelItem => item.Price) DT</h3>
+
+                        </a>
+                        @Html.ActionLink("add panier", "Create\\" + item.idProduct, "Lignecmd")
+                        
+                    </li>
+}
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.idProduct }) |
+            @Html.ActionLink("Details", "Details", new { id = item.idProduct }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.idProduct }) |
+            @Html.ActionLink("add panier", "Create\\" + item.idProduct, "Lignecmd")  |
+
+        </td>*@
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<pi.domaine.Entities.Pack>
+
+@{
+    ViewBag.Title = "IndexClient";
+    Layout = "~/Areas/administrator/Views/Shared/_forum.cshtml";
+}
+
+
+<form id="form">
+    <script src="{{ asset('css/jquery.min.js') }}"></script>
+    <script src="{{ asset('bootstrap.min.js') }}"></script>
+
+    @foreach (var item in Model)
+    {
+
+
+        <li class="col-xs-6 col-sm-3">
+            <a class="product  product-new   " href="huawei-y7-prime-2018/index.html">
+                @{ string path = "~/Content/Uploads/" + item.img;}
+                <img class="product-thumb" src="@Url.Content(path)" width="150" height="200" alt="Huawei Y7 Prime 2018">
+
+
+                <h2 class="product-brand">@Html.DisplayFor(modelItem => item.Titre)</h2>
+
+
+                <h3 class="product-price"> @Html.DisplayFor(modelItem => item.Prix) DT/Mois</h3>
+                <p id="product-name">sur:@Html.DisplayFor(modelItem => item.Periode_Engagement) Mois</p>
+                <a href="@Url.Action("DetailsClient","Packs", new { id = item.Id_Pack })"> Lire </a>
+
+            </a>
+        </li>
+
+    }
+
+
+
+
+
+    @*<select id="a" class="selectpicker" title="Sélectionnez la période">
+        @foreach (var item1 in Model)
+        {
+            <option value="item.Periode_Engagement">@Html.DisplayFor(modelItem => item1.Periode_Engagement)</option>
+        }
+
+        </select>
+            <input type="text" name="search" id="search" class="form-control" placeholder="Rehercher ici...">
+        </form>
+        <script>
+                $(document).ready(function(){
+                    $('#search').keyup(function(){
+                        search_table($(this).val());
+                    });
+                    function search_table(value){
+                        $('#mido tr').each(function () {
+                            var found = 'false';
+                            $(this).each(function(){
+                                if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)
+                                {
+                                    found = 'true';
+                                }
+                            });
+                            if(found == 'true')
+                            {
+                                $(this).show();
+
+                            }
+                            else
+                            {
+                                $(this).hide();
+
+                            }
+                        });
+                    }
+                });
+        </script>*@

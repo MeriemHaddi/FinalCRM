@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Mobiles";
+    Layout = "~/Areas/administrator/Views/Shared/_MobilesLayout.cshtml";
+}
+<center><h2> @ViewBag.Category.CategoryName Category</h2></center>
+@foreach (var item in ViewBag.Category.Products)
+{
+
+
+
+    <li class="col-xs-6 col-sm-3">
+        <a class="product product-new" href="@Url.Action("ProductDescription", new { id = item.idProduct })">
+            <img class="product-thumb" @{ string path = "~/Content/Uploads/" + item.Picture;}
+            <img src="@Url.Content(path)" width="200" height="200" />
+
+            <h2 class="product-brand">@item.CategoryProduct.CategoryName</h2>
+
+            <p class="product-name">@item.Product_Name</p>
+
+            <h3 class="product-price">@item.Price</h3>
+
+
+
+        </a>
+    </li>
+}
+
+
+

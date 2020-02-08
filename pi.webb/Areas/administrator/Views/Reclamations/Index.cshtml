@@ -1,0 +1,83 @@
+﻿@model IEnumerable<pi.domaine.Entities.Reclamation>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Head_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titre)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.etat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeReclamation)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="@item.idReclamation">
+            <td>
+                @Html.DisplayFor(modelItem => item.Titre)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.etat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeReclamation)
+            </td>
+            @if (item.etat == "Treated")
+            {
+                <td>
+
+
+                    @Html.ActionLink("Details", "Details", new { id = item.idReclamation }) |
+
+                </td>
+            }
+
+            @if (item.etat == "In process")
+            {
+                <td>
+
+
+                    @Html.ActionLink("Details", "Details", new { id = item.idReclamation }) |
+                    @Html.ActionLink("Edit", "Edit", new { id = item.idReclamation })|
+                    <button onclick="deletetMe(@item.idReclamation,@item.idReclamation)">Delete</button>
+
+                </td>
+            }
+
+        </tr>
+    }
+
+</table>
+<script>
+function deletetMe(myid, section) {
+                var r = confirm("Are you sure ?");
+                    if (r == true) {
+                          }
+                jQuery.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("DeleteAjax", "Reclamations")',
+                    data: { "id": myid },
+                    success: function (data) {
+                    var returnJson = data;
+                    }
+                    });
+                    var elem = document.getElementById(section);
+                    elem.parentElement.removeChild(elem);
+                    }
+</script>

@@ -1,0 +1,98 @@
+﻿@model IEnumerable<pi.domaine.Entities.OffrePostpayee>
+
+@{
+    ViewBag.Title = "ListeOffres";
+    Layout = "~/Areas/administrator/Views/Shared/_crmLayout.cshtml";
+}
+
+@*@foreach (var item in Model)
+    {
+         <div class="row">
+
+            <style>
+                .expt:after {
+                    content: "Lire";
+                }
+            </style>
+            <div class="col-sm-4">
+
+                <div class="bc-thumb">
+                    <h2 style="" class="expt"> @Html.DisplayFor(modelItem => item.Description)</h2>
+                    <img src="/wp-content/uploads/2018/12/2-1.png" alt="DJEZZY SPONSOR EXCLUSIF DE L’ÉMISSION SAWT CHALLENGE">
+                </div>
+                <div class="bc-titles">
+                    <h2 class="bc-title">@Html.DisplayFor(modelItem => item.Titre)</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    }*@
+
+
+<section id="home-news">
+
+    <h2 class="sc-title sc-center">Liste des Offres postpayées</h2>
+
+    <div class="row">
+
+        @*<style>
+                .expt:after {
+                    content: "Lire";
+                }
+            </style>*@
+
+
+        <div>
+            @using (Html.BeginForm("Search", "OffrePostpayees", FormMethod.Get))
+            {@Html.TextBox("filtre", "", new { placeholder = "Vous recherchez une offre?" })
+
+            <input type="submit" value="Search" id="submit" />
+            <br /> <br /> <br /> <br />
+
+        }
+        </div>
+
+        @if (Model.Count() == 0)
+        {
+            <h1>no match found</h1>
+
+        }
+
+        else
+        {
+            foreach (var item in Model)
+            {
+                <div class="col-sm-4">
+                    <a title="" target="_self" class="bc invert" href="djezzy/evenements/evenements/des-etudiants-partagent-un-moment-privilegie-avec-matthieu/index.html">
+                        <div class="bc-thumb">
+                            <h2 style="" class="expt"> @Html.DisplayFor(modelItem => item.Description)</h2>
+
+                            @{ string path = "~/Content/Uploads/" + item.img;}
+                            <img src="@Url.Content(path)" width="100" height="100" />
+                        </div>
+                        <div class="bc-titles">
+                            <h2 class="bc-title">@Html.DisplayFor(modelItem => item.Titre)</h2>
+                            <a href="@Url.Action("DetailsOffreClient","OffrePostpayees", new { id = item.Id_Offre })"> Lire </a>
+
+                        </div>
+                    </a>
+                </div>
+
+            }
+        }
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+

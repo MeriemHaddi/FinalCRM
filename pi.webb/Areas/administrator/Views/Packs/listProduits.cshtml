@@ -1,0 +1,36 @@
+﻿@model IEnumerable<pi.domaine.Entities.Product>
+
+@{
+    ViewBag.Title = "IndexClient";
+    Layout = "~/Areas/administrator/Views/Shared/_PacksLayout.cshtml";
+}
+
+
+<form id="form">
+
+    @foreach (var item in Model)
+    {
+
+
+        <li class="col-xs-6 col-sm-3">
+            <a class="product  product-new   " href="huawei-y7-prime-2018/index.html">
+                @{ string path = "~/Content/Uploads/" + item.Picture;}
+                <img class="product-thumb" src="@Url.Content(path)" width="150" height="200" alt="Huawei Y7 Prime 2018">
+
+
+                <h2 class="product-brand">@Html.DisplayFor(modelItem => item.Product_Name)</h2>
+
+
+                <h3 class="product-price"> @Html.DisplayFor(modelItem => item.Price) DT/Mois</h3>
+
+                @*<a href="@Url.Action("DetailsClient","Packs", new { id = item.Id_Pack })"> Lire </a>*@
+
+            </a>
+        </li>
+
+    }
+
+
+
+
+

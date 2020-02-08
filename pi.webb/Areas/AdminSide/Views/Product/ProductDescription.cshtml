@@ -1,0 +1,118 @@
+﻿@model pi.domaine.Entities.Product
+
+@{
+    ViewBag.Title = "ProductDescription";
+    Layout = "~/Areas/AdminSide/Views/Shared/Description.cshtml";
+}
+
+
+
+<div>
+
+    <div class="title-bar">
+        <div class="container">
+            <ol class="breadcrumb">
+
+                <li>
+                    <a class="breadcrumb-home" href="../../index.html">
+                        <span class="icon-Home_Page">
+                        </span><span class="bch-txt">Accueil</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        Mobiles
+                    </a>
+                </li>
+
+                <li class="active">@Html.DisplayFor(model => model.Product_Name)</li>
+
+            </ol>
+        </div>
+        <div class="page-title">
+            <div class="container">
+                <h1>@Html.DisplayFor(model => model.Product_Name)</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="container-fw container-shadow">
+        <div class="container">
+            <div class="row">
+
+                <div class=" text-center col-sm-6 col-xs-12">
+                    @{ string path = "~/Content/Uploads/" + @Html.DisplayFor(model => model.Picture);}
+                    <img src="@Url.Content(path)" width="300" height="350" />
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+                    <table width="724">
+                        <tbody>
+
+
+                            <tr>
+                                <td width="252">
+                                    <strong>Shop</strong>
+                                </td>
+                                <td width="472">
+                                    <p>@Html.DisplayFor(model => model.Shop.shop_name) </p>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td width="252" style="text-align: left;">
+                                    <strong>Item</strong>
+                                </td>
+                                <td width="472" style="text-align: center;">
+                                    <p style="text-align: left;">
+                                        <strong>
+                                            @Html.DisplayFor(model => model.Product_Name)<br />
+                                        </strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="252">
+                                    <strong>Category</strong>
+                                </td>
+                                <td width="472">
+                                    <p>@Html.DisplayFor(model => model.CategoryProduct.CategoryName) </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="252">
+                                    <strong>Quantity</strong>
+                                </td>
+                                <td width="472">
+                                    <p>@Html.DisplayFor(model => model.Quantity) </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="252">
+                                    <p><strong>Description</strong></p>
+                                </td>
+                                <td width="472">@Html.DisplayFor(model => model.Description)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1><strong>Only<span style="color: #ff0000;"> @Html.DisplayFor(model => model.Price)dt</span></strong></h1>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+</div>

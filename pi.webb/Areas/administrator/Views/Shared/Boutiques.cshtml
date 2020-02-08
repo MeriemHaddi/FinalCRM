@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta property="og:description" content="Retrouvez toute la liste des smartphones, tablettes et accessoires mobiles disponibles dans nos boutiques Djezzy, à travers toute l'Algérie. Prix de vente, description et détails.
+" />
+    <meta property="og:title" content="Djezzy boutique | Smartphones, tablettes, accessoires" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Djezzy" />
+    <meta property="og:image" content=@Url.Content("~/wp-content/uploads/2017/08/all1-1.jpg" ) />
+    <link rel="image_src" href=@Url.Content("~/wp-content/uploads/2017/08/all1-1.jpg") />
+
+    <meta name="twitter:title" content="Djezzy boutique | Smartphones, tablettes, accessoires" />
+    <meta name="twitter:description" content="Retrouvez toute la liste des smartphones, tablettes et accessoires mobiles disponibles dans nos boutiques Djezzy, à travers toute l'Algérie. Prix de vente, description et détails.
+" />
+    <meta name="twitter:image" content=@Url.Content("~/wp-content/uploads/2017/08/all1-1.jpg") />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <script async src="//"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4750143419582280",
+        enable_page_level_ads: true
+    });
+    </script>
+    <meta name="keywords" content="Djezzy, Algérie, Algeria, Mobiles, smartphones, tablettes, accessoires," />
+    <meta name="description" content="Retrouvez toute la liste des smartphones, tablettes et accessoires mobiles disponibles dans nos boutiques Djezzy, à travers toute l&#039;Algérie. Prix de vente, description et détails.
+" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel="stylesheet" href=@Url.Content("~/wp-content/themes/djezzy/assets/css/core.mince31.css?v=19" ) type="text/css">
+
+    <script type="text/javascript" src=@Url.Content("~/wp-content/themes/djezzy/assets/js/jquery.notready.min.js")></script>
+    <script type="text/javascript">
+        var ajaxurl = '../teq-ajax.html';
+    </script>
+
+
+
+</head>
+<body>
+    <div>
+
+    </div>
+
+
+    <nav id="m-navmaster">
+        <div>
+            <div id="m-search">
+                <form method="get" action="http://www.djezzy.dz/recherche/">
+                    <input name="search" id="m-search-input" type="search" class="form-control" placeholder="Recherche" />
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <span><span class="m-icn djz-language"></span>Langues</span>
+                    <ul>
+
+
+                        <li class="active">
+                            <a title="Français">
+                                Français
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+
+                <li>
+                    <a title="E-Paiement" href="https://moncompte.djezzy.dz/fr/guest/recharge">
+                        E-Paiement
+                    </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                    <a title="Nos boutiques" href="../nos-boutiques/index.html">
+                        Nos boutiques
+                    </a>
+                </li>
+
+
+
+
+
+                <li>
+                    <span>
+                        <span class="m-icn djz-tools"></span>
+                        Mon espace
+                    </span>
+                    <ul>
+                        <li><a title="Nous contacter" href="../nous-contacter/index.html">Nous contacter</a></li>
+                        <li><a title="E-paiement" href="https://moncompte.djezzy.dz/fr/guest/recharge">E-paiement</a></li>
+                        <li><a title="Web Chat" href="https://chat.djezzy.com/Code/webchatLogin.php">Web Chat</a></li>
+                        <li><a title="Imtiyaz" href="http://www.imtiyaz.dz/djezzyweb/">Imtiyaz</a></li>
+                        <li><a title="Guide configuration" href="../accueil/tout-sur-la-3g/guide-de-configuration/index.html">Guide configuration</a></li>
+                        <li><a title="Selfcare" href="../index.html">Selfcare</a></li>
+                    </ul>
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <div id="search-form">
+        <div class="mfp-bg in"></div>
+        <div id="search">
+            <div id="search-container">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                    <form method="get" action="http://www.djezzy.dz/recherche/" role="search">
+                        <div id="search-content">
+                            <div class="input-group">
+                                <form action="#">
+                                    <input name="search" type="text" class="form-control input-lg" placeholder="Recherche..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info btn-lg" type="submit">
+                                            <i class="djz-search"></i>
+                                        </button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav -->
+    <div id="nav-master">
+        <div class="container">
+            <ul id="utilities" class="nav navbar-nav">
+
+
+
+
+
+
+
+
+
+                <li>
+                    @Html.ActionLink("Nos boutiques", "Index", "Shopclient")
+
+
+                </li>
+
+
+
+
+
+
+                <li>
+                    <div id="my-djezzy" class="dropdown ">
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu--" ">
+
+                            <ul id=" mdj-links">
+                <li>
+                    <a title="Nous contacter" href="../nous-contacter/index.html"><span class="icon-Info-Facture"></span>Nous contacter</a>
+                </li>
+                <li>
+                    <a target="_blank" title="E-paiement" href="https://moncompte.djezzy.dz/fr/guest/recharge"><span class="icon-Flexy2"></span>E-paiement</a>
+                </li>
+                <li>
+                    <a title="Web Chat" href="https://chat.djezzy.com/Code/webchatLogin.php"><span class="icon-SMS"></span>Web Chat</a>
+                </li>
+                <li>
+                    <a title="Imtiyaz" href="http://www.imtiyaz.dz/djezzyweb/"><span class="icon-Cadeau-Surprise"></span>Imtiyaz</a>
+                </li>
+                <li>
+                    <a title="Guide configuration" href="../accueil/tout-sur-la-3g/guide-de-configuration/index.html"><span class="icon-Mobil-Connect"></span>Guide configuration</a>
+                </li>
+                <li>
+                    <a title="Selfcare" href="../index.html"><span class="icon-Profil-Premium"></span>Selfcare</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <li>
+        <div id="language-switch" class="dropdown">
+            <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Français            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+
+
+
+
+
+                <li class="active">
+                    <a title="Français">
+                        Français
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </li>
+    <li>
+        <button id="search-master" type="button">
+            <span class="djz-search"></span>
+        </button>
+    </li>
+    </ul>
+
+    </div>
+    </div>
+
+
+    <div id="nav-main" class="navbar navbar-default yamm">
+        <div class="container">
+            <div class="navbar-header navbar-header--left"><i class="ramadhan-logo" id="app-logo"></i></div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle djz-menu" data-toggle="collapse" data-target="#mynav"></button>
+                <a id="brand-logo" class="" href="../index.html">Djezzy            </a>
+                <button id="m-navmaster-btn" type="button" class="navbar-toggle djz-person"></button>
+            </div>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul id="menu" class="nav navbar-nav">
+
+
+
+
+                    <li class="dropdown yamm-fullwidth">
+                        <a class="menu-link dropdown-toggle" data-toggle="dropdown" href="#">Offres<b class="caret"></b></a>
+                        <div class="dropdown-menu xsubmenu">
+                            <div class="xsubmenu-nav col-sm-3">
+                                <ul class="nav nav-pills nav-stacked">
+
+                                    <li class="active"><a href="#item-106913" data-toggle="pill">Offres Prépayées</a></li>
+
+
+                                    <li class=""><a href="#item-106912" data-toggle="pill">Offres Postpayées</a></li>
+
+
+                                    <li class=""><a href="#item-106914" data-toggle="pill">Offres Internet</a></li>
+
+
+                                    <li class=""><a href="#item-113151" data-toggle="pill">Djezzy SPECIAL</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="tab-content col-sm-9">
+
+                                <div class="tab-pane active" id="item-106913">
+                                    <div class="row">
+                                        <div class="royalSlider rsDefault">
+                                            <div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy HAYLA MAXI" target="" class="bc" href="../particuliers/offres/djezzy-hayla-maxi/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2019/10/158x228fr0-158x228.jpg") alt="Djezzy HAYLA MAXI">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy HAYLA MAXI</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy HAYLA BEZZEF" target="" class="bc" href="../particuliers/offres/djezzy-hayla-bezzef/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2019/07/158x228_vf_hayla_bezzef-1.png") alt="Djezzy HAYLA BEZZEF">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy HAYLA BEZZEF</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy HADRA" target="" class="bc" href="../particuliers/offres/djezzy-hadra/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2018/09/declinaisons-hadra-stc-haaarba2.jpg") alt="Djezzy HADRA">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy HADRA</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane " id="item-106912">
+                                    <div class="row">
+                                        <div class="royalSlider rsDefault">
+                                            <div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="DJEZZY CONFORT" target="" class="bc" href="../particuliers/offres/djezzy-confort-2/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2019/09/djezzy-confort158x228.png") alt="DJEZZY CONFORT">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">DJEZZY CONFORT</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane " id="item-106914">
+                                    <div class="row">
+                                        <div class="royalSlider rsDefault">
+                                            <div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Pack Djezzy 3ayla" target="" class="bc" href="../particuliers/offres/djezzy-modem-1/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2019/03/3ayla-famille-portrait158-228.png") alt="Pack Djezzy 3ayla">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Pack Djezzy 3ayla</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy FLEXYNET" target="" class="bc" href="../particuliers/offres/flexy-net/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2019/02/flexynet-158x228-garc-on-2.png") alt="Djezzy FLEXYNET">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy FLEXYNET</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy Internet" target="" class="bc" href="../particuliers/offres/djezzy-internet/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2018/12/posters-djezzy-internet-generique-158x228-1.png") alt="Djezzy Internet">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy Internet</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div><div>
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy Connect 4G" target="" class="bc" href="../particuliers/offres/djezzy-connect-4g/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2018/10/djezzy-connect-158-x-282-vf-2.png") alt="Djezzy Connect 4G">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy Connect 4G</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="OFFRES INTERNET" target="" class="bc" href="../particuliers/offres/offres-internet/index.html">
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">OFFRES INTERNET</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane " id="item-113151">
+                                    <div class="row">
+                                        <div class="royalSlider rsDefault">
+                                            <div>
+
+
+                                                <div class="col-xs-4">
+                                                    <a title="Djezzy SPECIAL" target="" class="bc" href="../particuliers/offres/djezzy-special-1/index.html">
+                                                        <div class="bc-thumb">
+                                                            <img src=@Url.Content("~/wp-content/uploads/2019/06/special_web_158_228.png") alt="Djezzy SPECIAL">
+                                                        </div>
+
+                                                        <div class="bc-titles">
+                                                            <h2 class="bc-title">Djezzy SPECIAL</h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    <li><a title="Services" target="" class="menu-link" @Html.ActionLink("Service", "Service") </a></li>
+
+
+
+                    <li><a title="Mobiles" target="" class="menu-link" @Html.ActionLink("Products", "Mobiles", "Crm") </a></li>
+                    <li><a title="Mobiles" target="" class="menu-link" @Html.ActionLink("Shops", "Index", "Shop") </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="side-widget share-widget">
+            <div class="sw-container">
+                <a class="sw-control djz-share" href="#"></a>
+                <div class="sw-content">
+
+                    <div class="sw-share">
+                        <span>Partager sur :</span>
+                        <ul class="share-group ssk-group">
+                            <li><a class="btn-share djz-facebook ssk ssk-facebook" href="#"><span>facebook</span></a></li>
+                            <li><a class="btn-share djz-twitter ssk ssk-twitter" href="#"><span>twitter</span></a></li>
+                            <li><a class="btn-share djz-linkedin ssk ssk-linkedin" href="#"><span>linkedin</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*linaa*@
+
+        <div class="one-col-w-p">
+            <div id="focus-1">
+                <div class="service-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-12">
+                                <div class="content">
+
+                                    <h1><h1>NOS BOUTIQUES Djezzy</h1></h1>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-12">
+                                <i class="icon-Djezzy-Store"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="title-bar">
+                <div class="container">
+                    <ol class="breadcrumb">
+
+                        <li>
+                            <a class="breadcrumb-home" href="../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+                        </li>
+
+
+                        <li class="active">Nos boutiques</li>
+
+                    </ol>
+                </div>
+            </div>
+
+            <div id="focus-1">
+                <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHC7RCqCmH--nuvGYz9JU2uMkDBjQMHl4&amp;sensor=false"></script>
+
+                <div class="google-maps" data-items="[{&quot;cds&quot;:&quot;ADRAR&quot;,&quot;code&quot;:&quot;Z56&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Groupe 74, Pr\u00e9s souk Dinar Tayeb, Adrar.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09h00- 18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;27.87194&quot;,&quot;longitude&quot;:&quot;-0.28569&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Ain Defla - Emir Abdelkader&quot;,&quot;code&quot;:&quot;Z53&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Boulevard Emir Abdelkader, Ain Defla.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.26649&quot;,&quot;longitude&quot;:&quot;1.97418&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Ain Defla - Khemis Meliana&quot;,&quot;code&quot;:&quot;Z89&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Rue Belsaadi Abdelkader, Khemis Meliana, A\u00efn Defla.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A44B002&quot;,&quot;latitude&quot;:&quot;36.26118&quot;,&quot;longitude&quot;:&quot;2.21461&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;AIN TEMOUCHENT&quot;,&quot;code&quot;:&quot;Z58&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Boulevard du 1er Novembre, N\u00b0 19, Ain Temouchent.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.29095&quot;,&quot;longitude&quot;:&quot;-1.14046&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Abane Ramdane&quot;,&quot;code&quot;:&quot;ZE1&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;13 Rue abane Ramdane - Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.77892&quot;,&quot;longitude&quot;:&quot;3.05913&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Marsa&quot;,&quot;code&quot;:&quot;ZG2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;04 Rue Bouroua Si Lounes Ain Benian Alger &quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.524&quot;,&quot;longitude&quot;:&quot;10.&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Nabeul&quot;,&quot;code&quot;:&quot;Z11&quot;,&quot;categorie&quot;:&quot;A&quot;,&quot;adresse&quot;:&quot;23, Rue Didouche Mourad, Place Audin, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00-20:30&quot;,&quot;vendredi&quot;:&quot;14:00-20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B004&quot;,&quot;latitude&quot;:&quot;36.455066&quot;,&quot;longitude&quot;:&quot;10.715423&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Tunis&quot;,&quot;code&quot;:&quot;Z 52&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;06, Boulevard Abderrahmane Mira, BEO, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14:00 - 20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B007&quot;,&quot;latitude&quot;:&quot;36.4908&quot;,&quot;longitude&quot;:&quot;10.09&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Gabes&quot;,&quot;code&quot;:&quot;Z79&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Centre commercial et des loisirs -Quartier des affaires- Bab Ezzouar, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00 - 22:00&quot;,&quot;vendredi&quot;:&quot;09:00 - 22:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16X955&quot;,&quot;latitude&quot;:&quot;33.5253&quot;,&quot;longitude&quot;:&quot;10.0553&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Bir khadem&quot;,&quot;code&quot;:&quot;ZE9&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Place Taleb Mohamed Ameziane, Bir khadem, Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;Ouvert&quot;,&quot;latitude&quot;:&quot;36.71569&quot;,&quot;longitude&quot;:&quot;3.0493&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Bir Mourad Rais&quot;,&quot;code&quot;:&quot;Z05&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;01, Avenue Mohammedi, Bir Mourad Rais, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14:00-20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B002&quot;,&quot;latitude&quot;:&quot;36.739521&quot;,&quot;longitude&quot;:&quot;3.04958&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Carrefour&quot;,&quot;code&quot;:&quot;ZH6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Centre Commercial City Center Bab Ezzouar, Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09h00 - 22h00&quot;,&quot;vendredi&quot;:&quot;09H00-12H30 &amp; 14H30-22H00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.72959&quot;,&quot;longitude&quot;:&quot;3.17886&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Dar El Beida&quot;,&quot;code&quot;:&quot;Z48&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;03, Rue Mouloud Feraoun, Dar El Beida, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16T033&quot;,&quot;latitude&quot;:&quot;36.70962&quot;,&quot;longitude&quot;:&quot;3.20732&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Draria&quot;,&quot;code&quot;:&quot;ZF2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;573 Lot Gu\u00e9ssas, Route de Baba Hassen, Draria - Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.71011&quot;,&quot;longitude&quot;:&quot;2.99773&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - El Biar&quot;,&quot;code&quot;:&quot;Z04&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;130 Boulevard Ali KHODJA , El Biar&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14H00-20H30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.76904&quot;,&quot;longitude&quot;:&quot;3.02544&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - El Harrach&quot;,&quot;code&quot;:&quot;Z68&quot;,&quot;categorie&quot;:&quot;B+&quot;,&quot;adresse&quot;:&quot;03, Rue Ouled Sidi Cheikh, Belfort, El Harrach, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B012&quot;,&quot;latitude&quot;:&quot;36.72321&quot;,&quot;longitude&quot;:&quot;3.14839&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Hussein Dey&quot;,&quot;code&quot;:&quot;ZH5&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;24 B, RUE BOUDJEMAA MOUGHNI, HUSSEIN-DEY - ALGER (ex boulevard de la r\u00e9publique).&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ferm\u00e9&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.74131&quot;,&quot;longitude&quot;:&quot;3.09762&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Kouba (Ben Omar)&quot;,&quot;code&quot;:&quot;ZH4&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;309 Parc Ben Omar, Kouba - Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.72429&quot;,&quot;longitude&quot;:&quot;3.09145&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Kouba (Ex Lavigerie)&quot;,&quot;code&quot;:&quot;Z 09&quot;,&quot;categorie&quot;:&quot;A&quot;,&quot;adresse&quot;:&quot;86, Avenue des fr\u00e8res Abdeslami (Ex Lavigerie), Vieux Kouba, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14:00 - 20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B003&quot;,&quot;latitude&quot;:&quot;36.72947&quot;,&quot;longitude&quot;:&quot;3.07893&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Reghaia&quot;,&quot;code&quot;:&quot;Z77&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;R\u00e9sidence Es Salem , Lot N\u00b0 26 , R\u00e9ghaia, Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B010&quot;,&quot;latitude&quot;:&quot;36.74648&quot;,&quot;longitude&quot;:&quot;3.34231&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Rouiba&quot;,&quot;code&quot;:&quot;Z50&quot;,&quot;categorie&quot;:&quot;A&quot;,&quot;adresse&quot;:&quot;15, Boulevard Colonel Amirouche, Rouiba, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14:00 - 20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B006&quot;,&quot;latitude&quot;:&quot;36.73778&quot;,&quot;longitude&quot;:&quot;3.28249&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Sidi M&#039;hamed&quot;,&quot;code&quot;:&quot;ZF1&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;89 Boulvard Mohamed Belouizdad, Sidi M&#039;hamed, Alger&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.75434&quot;,&quot;longitude&quot;:&quot;3.06103&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Staou\u00e9li&quot;,&quot;code&quot;:&quot;Z71&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;C.E.M Lychly, Staou\u00e9li, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16B009&quot;,&quot;latitude&quot;:&quot;36.75085&quot;,&quot;longitude&quot;:&quot;2.88701&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Alger - Z\u00e9ralda&quot;,&quot;code&quot;:&quot;ZE2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Local N\u00b0 02 118 rue 01 Novembre Z\u00e9ralda&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.71211&quot;,&quot;longitude&quot;:&quot;2.84071&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ALGER A\u00c9ROPORT International&quot;,&quot;code&quot;:&quot;Z08&quot;,&quot;categorie&quot;:&quot;C-&quot;,&quot;adresse&quot;:&quot;A\u00e9roport Houari Boumediene, Terminal International, Hall Central, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00-22:00&quot;,&quot;vendredi&quot;:&quot;08:00-22:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16M708&quot;,&quot;latitude&quot;:&quot;36.69849&quot;,&quot;longitude&quot;:&quot;3.20585&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ALGER A\u00c9ROPORT National&quot;,&quot;code&quot;:&quot;Z 98&quot;,&quot;categorie&quot;:&quot;C-&quot;,&quot;adresse&quot;:&quot;A\u00e9roport Houari Boumediene, Terminal National, Hall Central, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 22:00&quot;,&quot;vendredi&quot;:&quot;08:00 - 22:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A16X001&quot;,&quot;latitude&quot;:&quot;36.7003&quot;,&quot;longitude&quot;:&quot;3.21195&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Annaba - El Bouni&quot;,&quot;code&quot;:&quot;Z 84&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Division 52, Groupe 62 N\u00b0 D15, EL Bouni Centre, Annaba&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C23B002&quot;,&quot;latitude&quot;:&quot;36.85454&quot;,&quot;longitude&quot;:&quot;7.74166&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Annaba - Ex Majestic&quot;,&quot;code&quot;:&quot;Z10&quot;,&quot;categorie&quot;:&quot;B+&quot;,&quot;adresse&quot;:&quot;15, Boulevard du 1er Novembre 1954 (Ex Majestic), Annaba.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C23B001&quot;,&quot;latitude&quot;:&quot;36.90625&quot;,&quot;longitude&quot;:&quot;7.76014&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Azzaba - Skikda&quot;,&quot;code&quot;:&quot;ZF6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;56 Avenue de l\u2019ind\u00e9pendance, Azzaba - Skikda&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:30 - 17:30&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.7382&quot;,&quot;longitude&quot;:&quot;7.10728&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Bab El Gharb - Cherchell - Tipaza&quot;,&quot;code&quot;:&quot;ZD5&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;03 Rue Youcef Khodja Mohamed, Bab El Gharb, Cherchell - Tipaza&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00\u00a0 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.60627&quot;,&quot;longitude&quot;:&quot;2.1865&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Batna - Barika&quot;,&quot;code&quot;:&quot;Z85&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Rue Charif Lakhdar, Barika, Batna.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C05B003&quot;,&quot;latitude&quot;:&quot;35.38422&quot;,&quot;longitude&quot;:&quot;5.22912&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Batna - Centre&quot;,&quot;code&quot;:&quot;Z23&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;55 bis, Route de Biskra, Batna.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.54911&quot;,&quot;longitude&quot;:&quot;6.17217&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;BECHAR&quot;,&quot;code&quot;:&quot;Z44&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;56, Rue Slimane Belkhedim, B\u00e9char.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00- 19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O08B001&quot;,&quot;latitude&quot;:&quot;31.61366&quot;,&quot;longitude&quot;:&quot;-2.21709&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;B\u00e9jaia - Akbou&quot;,&quot;code&quot;:&quot;Z66&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Rue A\u00efssat Idir, Guendouza, R.N 26, Akbou, B\u00e9ja\u00efa.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A06B002&quot;,&quot;latitude&quot;:&quot;36.45577&quot;,&quot;longitude&quot;:&quot;4.53582&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;B\u00e9jaia - Ihadeden&quot;,&quot;code&quot;:&quot;ZC9&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Laazib Oumaamar Ihadeden, Bejaia.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08H00 - 19H00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.74188&quot;,&quot;longitude&quot;:&quot;5.04545&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;B\u00e9jaia - Kherrata&quot;,&quot;code&quot;:&quot;ZA8&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Route national 09, Kherrata Centre - B\u00e9jaia&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.49134&quot;,&quot;longitude&quot;:&quot;5.27866&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;BISKRA - Centre commercial El Khir&quot;,&quot;code&quot;:&quot;Z31&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Centre commercial El Khir sis 03 avenue fr\u00e8res Saouli Biskra &quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00 \u00e0 18h00 &quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C07B001&quot;,&quot;latitude&quot;:&quot;34.85636&quot;,&quot;longitude&quot;:&quot;5.72389&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Blida - Boufarik&quot;,&quot;code&quot;:&quot;Z73&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;31, BOULEVARD MOUKHTARI, BOUFARIK, BLIDA.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.57347&quot;,&quot;longitude&quot;:&quot;2.91213&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Blida -place Zabana&quot;,&quot;code&quot;:&quot;Z17&quot;,&quot;categorie&quot;:&quot;A&quot;,&quot;adresse&quot;:&quot;38, Boulevard Larbi Tebessi, place Zabana, Blida.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00 - 19:30&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A09B001&quot;,&quot;latitude&quot;:&quot;36.47498&quot;,&quot;longitude&quot;:&quot;2.82818&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;BORDJ BOU ARR\u00c9RIDJ&quot;,&quot;code&quot;:&quot;Z34&quot;,&quot;categorie&quot;:&quot;B+&quot;,&quot;adresse&quot;:&quot;07, Rue Ramache A\u00efssa, Bordj Bou Arr\u00e9ridj.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C34B001&quot;,&quot;latitude&quot;:&quot;36.07344&quot;,&quot;longitude&quot;:&quot;4.75651&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Bouira - Lakhdaria&quot;,&quot;code&quot;:&quot;Z90&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;86, Boulevard Si Lakhdar, Lakhdaria, Bouira.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A10B002&quot;,&quot;latitude&quot;:&quot;36.56336&quot;,&quot;longitude&quot;:&quot;3.59823&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Bouira - UNO&quot;,&quot;code&quot;:&quot;ZC6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Centre commercial UNO - Bouira&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00\u00a0 22:00&quot;,&quot;vendredi&quot;:&quot;09H00 12H30 &amp; 14H30 22H00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.39799&quot;,&quot;longitude&quot;:&quot;3.90175&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Bouira - Zighout youcef&quot;,&quot;code&quot;:&quot;Z42&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Division Lakhdar Chaouche, Classe 63   72 (Rue Zighout youcef) Bouira&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.37334&quot;,&quot;longitude&quot;:&quot;3.89606&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;BOUMERDES&quot;,&quot;code&quot;:&quot;Z12&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 Deriche N\u00b024, Lot N\u00b006, Boumerdes.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A35B001&quot;,&quot;latitude&quot;:&quot;36.75038&quot;,&quot;longitude&quot;:&quot;3.47381&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Chlef - BEN BADIS&quot;,&quot;code&quot;:&quot;Z22&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Bvd Abdelhamid BEN BADIS N\u00b0 14 Chlef&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.16546&quot;,&quot;longitude&quot;:&quot;1.33688&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Chlef - Boukadir&quot;,&quot;code&quot;:&quot;Z95&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 50 Logements, Commune Boukadir \u2013 Chlef&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;\u200b Ouverte&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.06503&quot;,&quot;longitude&quot;:&quot;1.12677&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Chlef - Ch\u00e9ttia&quot;,&quot;code&quot;:&quot;ZA5&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Zone 05 N\u00b0 271, Commune Ch\u00e9ttia, Da\u00efra Oulad Far\u00e9s, Wilaya de Chlef&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.19799&quot;,&quot;longitude&quot;:&quot;1.26206&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;CONSTANTINE -  Sidi Mabrouk&quot;,&quot;code&quot;:&quot;Z 82&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;09, Rue Larakeb Ahmed, Sidi Mabrouk, Constantine.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C25B004&quot;,&quot;latitude&quot;:&quot;36.3608&quot;,&quot;longitude&quot;:&quot;6.63679&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Constantine - Ain Smara&quot;,&quot;code&quot;:&quot;ZG5&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;03 Route Nationale N\u00b0 05, A\u00efn Smara - Constantine&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.26776&quot;,&quot;longitude&quot;:&quot;6.50271&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Constantine - Ali Menjeli&quot;,&quot;code&quot;:&quot;ZA2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Lotissement Ain En Baye , lot N\u00b0 65 , ville Ali Mendjli , Constantine&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 20:00&quot;,&quot;vendredi&quot;:&quot;\u200b14:00 - 20:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.2581&quot;,&quot;longitude&quot;:&quot;6.5905&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Constantine - EL KHROUB&quot;,&quot;code&quot;:&quot;Z25&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Centre Commercial Cit\u00e9 1600 Lgts N\u00b0 761, El Khroub, Constantine&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 20:00&quot;,&quot;vendredi&quot;:&quot;\u200b14:00 - 20:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.25869&quot;,&quot;longitude&quot;:&quot;6.70096&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;CONSTANTINE - Ex St Jean&quot;,&quot;code&quot;:&quot;Z07&quot;,&quot;categorie&quot;:&quot;A+&quot;,&quot;adresse&quot;:&quot;15, Rue Belouizdad (Ex St Jean), Constantine.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:00&quot;,&quot;vendredi&quot;:&quot;14:30 - 20:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C25B001&quot;,&quot;latitude&quot;:&quot;36.36248&quot;,&quot;longitude&quot;:&quot;6.60469&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Constantine - Hamma Bouziane&quot;,&quot;code&quot;:&quot;ZA6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Boulvard de l&#039;A.L.N Local A1\/A2, Hamma Bouziane, Wilaya de Constantine&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.41647&quot;,&quot;longitude&quot;:&quot;6.5976&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Constantine A\u00e9roport&quot;,&quot;code&quot;:&quot;ZA1&quot;,&quot;categorie&quot;:&quot;C-&quot;,&quot;adresse&quot;:&quot;A\u00e9roport Mohamed Boudiaf, Hall Central, Constantine.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:30 - 18:30&quot;,&quot;vendredi&quot;:&quot;08:30 - 13:00 &amp; 14:00 - 18:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.28359&quot;,&quot;longitude&quot;:&quot;6.6221&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Djelfa - Ain Oussara&quot;,&quot;code&quot;:&quot;Z86&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 Houari Boumediene, N\u00b0 02, Ain Oussara, Djelfa.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A17B002&quot;,&quot;latitude&quot;:&quot;35.44905&quot;,&quot;longitude&quot;:&quot;2.90111&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Djelfa - Hassi Bahbah\u00a0&quot;,&quot;code&quot;:&quot;ZE6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 Colonel Si El Houasse Bloc 43 N\u00b007,  Hassi Bahbah\u00a0- Djelfa&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.07252&quot;,&quot;longitude&quot;:&quot;3.02782&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Djelfa - Sidi Na\u00eel&quot;,&quot;code&quot;:&quot;Z37&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;84, Rue Sidi Na\u00eel, Djelfa.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A17B001&quot;,&quot;latitude&quot;:&quot;34.66928&quot;,&quot;longitude&quot;:&quot;3.25062&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;El Attaf - A\u00efn Defla&quot;,&quot;code&quot;:&quot;ZE8&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;57 Boulvard Mohamed Khemisti, El Attaf - A\u00efn Defla&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.22482&quot;,&quot;longitude&quot;:&quot;1.67134&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;EL BAYADH&quot;,&quot;code&quot;:&quot;Z61&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Rue Brahim Belkacem, Place Emir Abdelkader, El Bayadh.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O32B001&quot;,&quot;latitude&quot;:&quot;33.68269&quot;,&quot;longitude&quot;:&quot;1.01499&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;EL OUED&quot;,&quot;code&quot;:&quot;Z39&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 l&#039;Asnam, El Oued.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00- 19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C39B001&quot;,&quot;latitude&quot;:&quot;33.35742&quot;,&quot;longitude&quot;:&quot;6.85409&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;El Taref&quot;,&quot;code&quot;:&quot;Z55&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Rue Keddache Messaoud, RN N\u00b0 44, El Taref.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.76686&quot;,&quot;longitude&quot;:&quot;8.31395&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;El Taref - Drean&quot;,&quot;code&quot;:&quot;ZG7&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;04 Cite Ben BAALI Mohamed, Drean - El Taref&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.68464&quot;,&quot;longitude&quot;:&quot;7.75094&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;GHARDAIA&quot;,&quot;code&quot;:&quot;Z47&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Rue du 1er Novembre, Thniyet El Makhzen, Ghardaia&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09h00-18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C47B001&quot;,&quot;latitude&quot;:&quot;32.48026&quot;,&quot;longitude&quot;:&quot;3.68153&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;GUELMA&quot;,&quot;code&quot;:&quot;Z36&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;06, Rue Ali Chorfi, Guelma.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.46679&quot;,&quot;longitude&quot;:&quot;7.43216&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ILLIZI&quot;,&quot;code&quot;:&quot;Z67&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 El Wassat, N\u00b0 10, Illizi.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09h00-18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;26.50133&quot;,&quot;longitude&quot;:&quot;8.47678&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;JIJEL - 1er Novembre&quot;,&quot;code&quot;:&quot;Z35&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;01, Boulevard du 1er Novembre 1954, Jijel.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C18B001&quot;,&quot;latitude&quot;:&quot;36.81987&quot;,&quot;longitude&quot;:&quot;5.76989&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Jijel - Chabi Mekki&quot;,&quot;code&quot;:&quot;ZD6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Rue Chabi Mekki N\u00b0 92, Jijel.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.80536&quot;,&quot;longitude&quot;:&quot;5.74916&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Jijel - \u200bEL MILIA&quot;,&quot;code&quot;:&quot;ZD2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Grand Boulevard - El Milia - Jijel&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b09:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.74901&quot;,&quot;longitude&quot;:&quot;6.27247&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Jijel - Tah\u00e9r&quot;,&quot;code&quot;:&quot;ZH2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;23 Rue Amra Tahar, Tah\u00e9r - Jijel&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.77161&quot;,&quot;longitude&quot;:&quot;5.896&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;KHENCHELA&quot;,&quot;code&quot;:&quot;Z57&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Galerie Mascula, Route de Babar, Khenchela.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.43106&quot;,&quot;longitude&quot;:&quot;7.14477&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Kol\u00e9a - Tipaza&quot;,&quot;code&quot;:&quot;Z69&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;11, Place Kesrli El Hadi, Kol\u00e9a, Tipaza.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.63919&quot;,&quot;longitude&quot;:&quot;2.76781&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Laghouat - Emir Abdelkader&quot;,&quot;code&quot;:&quot;Z45&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Rue Emir Abdelkader, Laghouat.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00- 19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;33.80728&quot;,&quot;longitude&quot;:&quot;2.88147&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Laghouat- Aflou&quot;,&quot;code&quot;:&quot;ZE3&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Ilot 23 Boulvard Emir Abdelkader, Aflou - Laghouat&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00- 18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;34.11407&quot;,&quot;longitude&quot;:&quot;2.10169&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Larb\u00e2a - Blida&quot;,&quot;code&quot;:&quot;ZF7&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;73 Avenue Mohamed K\u00e9bir, Larbaa - Blida&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.56654&quot;,&quot;longitude&quot;:&quot;3.15288&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;M&amp;rsquo;SILA - Boussa\u00e2da&quot;,&quot;code&quot;:&quot;Z87&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 Nasr , Lot N\u00b0 29 , Route de Djelfa , Boussa\u00e2da. M&#039;Sila&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00-19:00 &quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.21191&quot;,&quot;longitude&quot;:&quot;4.17636&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;M&amp;rsquo;SILA - Promotion Neggaz&quot;,&quot;code&quot;:&quot;Z38&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 des 14 Logements, Promotion Neggaz, M&#039;sila.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C28B001&quot;,&quot;latitude&quot;:&quot;35.70433&quot;,&quot;longitude&quot;:&quot;4.53541&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;MASCARA - Khemisti&quot;,&quot;code&quot;:&quot;Z29&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Boulevard Mohamed Khemisti&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 \u2013 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.39602&quot;,&quot;longitude&quot;:&quot;0.13903&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Mascara - Lotfi&quot;,&quot;code&quot;:&quot;ZB1&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 50 Logts LSP, Zone 7 - Mascara&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b09:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.4041&quot;,&quot;longitude&quot;:&quot;0.14821&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Mascara - Mohammadia&quot;,&quot;code&quot;:&quot;Z93&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;58, Rue Larbi Ben Mehidi, Mouhammadia, Mascara.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O29B002&quot;,&quot;latitude&quot;:&quot;35.59332&quot;,&quot;longitude&quot;:&quot;0.07013&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Mascara - Tighenif&quot;,&quot;code&quot;:&quot;ZB8&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Avenue des Martyrs - Tighenif - Mascara&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;ferm\u00e9&quot;,&quot;fetes&quot;:&quot;ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.41516&quot;,&quot;longitude&quot;:&quot;0.33185&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;M\u00e9d\u00e9a - Ksar Boukhari&quot;,&quot;code&quot;:&quot;ZA9&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Local N\u00b0 01, cit\u00e9 de la gare, Ksar El Boukhari, M\u00e9d\u00e9a&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.88745&quot;,&quot;longitude&quot;:&quot;2.74841&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;M\u00e9d\u00e9a- Bachene&quot;,&quot;code&quot;:&quot;Z26&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;16, rue des fr\u00e8res Bachene, M\u00e9d\u00e9a.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00\u00a0 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A26B001&quot;,&quot;latitude&quot;:&quot;36.26416&quot;,&quot;longitude&quot;:&quot;2.75592&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;MILA&quot;,&quot;code&quot;:&quot;Z81&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Boulevard Zerrouki, Cit\u00e9 des 500 Logements, Mila.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C43B002&quot;,&quot;latitude&quot;:&quot;36.45521&quot;,&quot;longitude&quot;:&quot;6.26201&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Mila - Chelghoum El Aid&quot;,&quot;code&quot;:&quot;Z43&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 BOUNAAS AHMED Chelghoum El A\u00eed Mila&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.16281&quot;,&quot;longitude&quot;:&quot;6.17012&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;MOSTAGANEM - Benyahia Belkacem&quot;,&quot;code&quot;:&quot;Z18&quot;,&quot;categorie&quot;:&quot;B+&quot;,&quot;adresse&quot;:&quot;33, Rue Benyahia Belkacem, Mostaganem.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O27B001&quot;,&quot;latitude&quot;:&quot;35.92825&quot;,&quot;longitude&quot;:&quot;0.09459&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Mostaganem - UNO&quot;,&quot;code&quot;:&quot;ZC4&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Centre commercial\/ Route de Relizen, Hassi Maameche.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00 - 21:00&quot;,&quot;vendredi&quot;:&quot;09:00 - 12:30 &amp; 15:00 - 21:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.89966&quot;,&quot;longitude&quot;:&quot; 0.12107&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;N\u00e2ama - MECHRIA&quot;,&quot;code&quot;:&quot;Z62&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Ha\u00ef Essalem, RN 26, M\u00e9chria, N\u00e2ama.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O45B001&quot;,&quot;latitude&quot;:&quot;33.54299&quot;,&quot;longitude&quot;:&quot;-0.27458&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Na\u00e2ma - Zone Urbaine&quot;,&quot;code&quot;:&quot;ZE4&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Zone Urbaine, Cit\u00e9 des 540 Logements, Na\u00e2ma&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;33.2758&quot;,&quot;longitude&quot;:&quot;-0.30931&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Nouvel A\u00e9roport International d\u2019ALGER&quot;,&quot;code&quot;:&quot;ZH7&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;A\u00e9roport Houari Boumediene, Terminal 04, Hall Central, Alger.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 22:00&quot;,&quot;vendredi&quot;:&quot;08:00 - 22:00&quot;,&quot;fetes&quot;:&quot;ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.699681&quot;,&quot;longitude&quot;:&quot;3.201221&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oran - A\u00efn Turk&quot;,&quot;code&quot;:&quot;ZA4&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Boulvard des Villas (Ex Boulvard Khaled Ibn El-Walid) N\u00b001 Lot N\u00b002 A\u00efn Turk, Oran&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.74796&quot;,&quot;longitude&quot;:&quot;-0.77085&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oran - ARZEW&quot;,&quot;code&quot;:&quot;Z 94&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;06 avenue El Qods, N\u00b0 18&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O31B005&quot;,&quot;latitude&quot;:&quot;35.84937&quot;,&quot;longitude&quot;:&quot;-0.31556&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ORAN - Bir El Djir&quot;,&quot;code&quot;:&quot;Z70&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Boulevard Fernand Ville, Bir El Djir, Oran.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Fermer&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O31B003&quot;,&quot;latitude&quot;:&quot;35.734374&quot;,&quot;longitude&quot;:&quot;-0.578318&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oran - Es Senia&quot;,&quot;code&quot;:&quot;ZB5&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;31 PLACETTE DES MARTYRS \u2013 COMMUNE D\u2019ES SENIA - ORAN&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.64934&quot;,&quot;longitude&quot;:&quot; -0.62489 &quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ORAN - Front de mer&quot;,&quot;code&quot;:&quot;Z06&quot;,&quot;categorie&quot;:&quot;A+&quot;,&quot;adresse&quot;:&quot;10, Rue de Nancy (Front de mer), Oran.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14:00 - 20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O31B001&quot;,&quot;latitude&quot;:&quot;35.70529&quot;,&quot;longitude&quot;:&quot;-0.63518&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oran - Gdyel&quot;,&quot;code&quot;:&quot;ZB4&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;25 BLVD MOHAMED KHEMISTI \u2013 COMMUNE DE GDYEL \u2013 ORAN&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.78267&quot;,&quot;longitude&quot;:&quot;-0.42305&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oran - Plateau&quot;,&quot;code&quot;:&quot;ZB2&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;31 BOULEVARD COMMANDANT BEN ADDA BENAOUDA\u00a0 \u2013 PLATEAU - ORAN&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.6964&quot;,&quot;longitude&quot;:&quot;-0.64041 &quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ORAN - St Hubert ex : Boulanger&quot;,&quot;code&quot;:&quot;Z14&quot;,&quot;categorie&quot;:&quot;A&quot;,&quot;adresse&quot;:&quot;Boulevard de l&#039;ALN, Coop\u00e9rative El Bahia Lot N\u00b006, St Hubert, Oran.\r\n&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;14:00 - 20:30&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O31B002&quot;,&quot;latitude&quot;:&quot;35.67261&quot;,&quot;longitude&quot;:&quot;-0.63835&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;ORAN A\u00c9ROPORT&quot;,&quot;code&quot;:&quot;Z49&quot;,&quot;categorie&quot;:&quot;C-&quot;,&quot;adresse&quot;:&quot;A\u00e9roport d&#039;Oran, Hall Central, Es-Senia, Oran.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:00&quot;,&quot;vendredi&quot;:&quot;08:00 - 13:00 &amp; 14:00 - 20:00&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O31B004&quot;,&quot;latitude&quot;:&quot;35.62031&quot;,&quot;longitude&quot;:&quot;-0.60615&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Ouargla - Hassi Messaoud&quot;,&quot;code&quot;:&quot;Z30&quot;,&quot;categorie&quot;:&quot;C-&quot;,&quot;adresse&quot;:&quot;Rond-point principal-Zone industrielle, route de Ouargla&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00-17h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C30B003&quot;,&quot;latitude&quot;:&quot;31.68966&quot;,&quot;longitude&quot;:&quot;6.0575&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Ouargla - La Silice&quot;,&quot;code&quot;:&quot;Z28&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 du 24 F\u00e9vrier, Quartier la Silice, Ouargla.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09h00- 18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C30B003&quot;,&quot;latitude&quot;:&quot;31.95883&quot;,&quot;longitude&quot;:&quot;5.33587&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Ouargla - Touggourt&quot;,&quot;code&quot;:&quot;Z92&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Place El Houria, N\u00b011 et 12, Touggourt, Ouargla.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00- 19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C30B004&quot;,&quot;latitude&quot;:&quot;33.10562&quot;,&quot;longitude&quot;:&quot;6.06691&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oum El Bouaghi - 18 F\u00e9vrier&quot;,&quot;code&quot;:&quot;Z33&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;18, Boulevard du 18 F\u00e9vrier, OEB.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b09:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O37B001&quot;,&quot;latitude&quot;:&quot;35.86962&quot;,&quot;longitude&quot;:&quot;7.11643&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oum El Bouaghi - A\u00cfN BE\u00cfDA&quot;,&quot;code&quot;:&quot;Z80&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Rue khafeche Abdellah, Villa N\u00b03, A\u00efn El Be\u00efda, Oum El Bouaghi&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b09:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C04B002&quot;,&quot;latitude&quot;:&quot;35.79732&quot;,&quot;longitude&quot;:&quot;7.39205&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oum El Bouaghi - Ain Fakroun&quot;,&quot;code&quot;:&quot;ZF4&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Boulevard 01 Novembre, A\u00efn Fakroun - Oum El Bouaghi&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.97026&quot;,&quot;longitude&quot;:&quot;6.87263&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Oum El Bouaghi - A\u00efn M\u2019lila&quot;,&quot;code&quot;:&quot;ZF3&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;10 Cit\u00e9 01 Mai, A\u00efn M\u2019lila - Oum El Bouaghi&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.03935&quot;,&quot;longitude&quot;:&quot;6.56905&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Relizane - Aoued Ben Djebbar&quot;,&quot;code&quot;:&quot;Z46&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;08, Boulevard Aoued Ben Djebbar, Relizane.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.73992&quot;,&quot;longitude&quot;:&quot;0.54834&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Relizane - Oued Rhiou&quot;,&quot;code&quot;:&quot;ZD1&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Avenue des Martyrs - Oued Rhiou - Relizane&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;ferm\u00e9&quot;,&quot;fetes&quot;:&quot;ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.96163&quot;,&quot;longitude&quot;:&quot;0.91777&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;SAIDA&quot;,&quot;code&quot;:&quot;Z40&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;46, Avenue Ahmed Medeghri, Sa\u00efda.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O20B001&quot;,&quot;latitude&quot;:&quot;34.83155&quot;,&quot;longitude&quot;:&quot;0.14632&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;S\u00c9TIF - EL EULMA&quot;,&quot;code&quot;:&quot;Z72&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;120, Rue du 1er Novembre 1954, El Eulma, S\u00e9tif.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C19B002&quot;,&quot;latitude&quot;:&quot;36.15182&quot;,&quot;longitude&quot;:&quot;5.68801&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;S\u00e9tif - Parc Mall&quot;,&quot;code&quot;:&quot;ZE7&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Prombati - Park mall, Setif.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;10:00 - 22:00&quot;,&quot;vendredi&quot;:&quot;10:00 - 12:30 &amp; 14:30 - 22:00\u200b&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.19177&quot;,&quot;longitude&quot;:&quot;5.40975&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;S\u00c9TIF - Promotion Neggaz&quot;,&quot;code&quot;:&quot;Z83&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 BOUAROUA, Rue SAAL Bouzid N\u00b04, S\u00e9tif.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C19B003&quot;,&quot;latitude&quot;:&quot;36.19209&quot;,&quot;longitude&quot;:&quot;5.42468&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Sidi Bel Abbes - R\u00e9publique&quot;,&quot;code&quot;:&quot;Z19&quot;,&quot;categorie&quot;:&quot;B+&quot;,&quot;adresse&quot;:&quot;21, Avenue de la r\u00e9publique, SBA.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O22B001&quot;,&quot;latitude&quot;:&quot;35.19074&quot;,&quot;longitude&quot;:&quot;-0.63368&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Sig - Mascara&quot;,&quot;code&quot;:&quot;ZF8&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;47 Boulevard de la Revolution, Sig - Mascara&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;ferm\u00e9 &quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.53106&quot;,&quot;longitude&quot;:&quot;-0.19268&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;SKIKDA&quot;,&quot;code&quot;:&quot;Z21&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;50, Rue Bachir Boukadoum (face \u00e0 la CNR), Skikda.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C21B001&quot;,&quot;latitude&quot;:&quot;36.87234&quot;,&quot;longitude&quot;:&quot;6.90916&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Skikda - El Harrouche&quot;,&quot;code&quot;:&quot;ZG6&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;40 Rue M\u00e9gharbi, El Harrouche - Skikda&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.65245&quot;,&quot;longitude&quot;:&quot;6.83603&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Souguer - Tiaret&quot;,&quot;code&quot;:&quot;ZC7&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Rue Moulay Boucherit - Lots Bakiro Ben Amar - Sougueur - Tiaret&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b09:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.18702&quot;,&quot;longitude&quot;:&quot;1.49179&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;SOUK AHRAS&quot;,&quot;code&quot;:&quot;Z41&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Route de Tifache, N\u00b001, Souk Ahras.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.28484&quot;,&quot;longitude&quot;:&quot;7.94632&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TAMANRASSET&quot;,&quot;code&quot;:&quot;Z65&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Quartier Sersouf, Tamanrasset.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09h00-18h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;22.79821&quot;,&quot;longitude&quot;:&quot;5.52697&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;T\u00c9B\u00c9SSA - Djebel El Djorf&quot;,&quot;code&quot;:&quot;Z32&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;Rond point de T\u00e9b\u00e9ssa, Rue Djebel El Djorf, T\u00e9b\u00e9ssa.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 19:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;C12B001&quot;,&quot;latitude&quot;:&quot;35.40069&quot;,&quot;longitude&quot;:&quot;8.11718&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;T\u00e9n\u00e8s - Chlef&quot;,&quot;code&quot;:&quot;ZE5&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;17B Boulvard de la R\u00e9volution, T\u00e9n\u00e8s - Chlef&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;09:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.51103&quot;,&quot;longitude&quot;:&quot;1.30725&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TIARET - Ben Badis&quot;,&quot;code&quot;:&quot;Z27&quot;,&quot;categorie&quot;:&quot;B&quot;,&quot;adresse&quot;:&quot;06, Avenue Ben Badis, Tiaret.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O14B001&quot;,&quot;latitude&quot;:&quot;35.37543&quot;,&quot;longitude&quot;:&quot;1.31519&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TINDOUF&quot;,&quot;code&quot;:&quot;Z60&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 El Kassabi, N\u00b005, Tindouf.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08h00- 19h00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;O37B001&quot;,&quot;latitude&quot;:&quot;27.67362&quot;,&quot;longitude&quot;:&quot;-8.14332&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TIPAZA&quot;,&quot;code&quot;:&quot;Z24   &quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;01, Rue du stade, Tipaza.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00\u00a0 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;36.59103&quot;,&quot;longitude&quot;:&quot;2.44513&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Tissemsilet&quot;,&quot;code&quot;:&quot;Z59&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;Cit\u00e9 des 132 Logements, N\u00b0 133, Tissemesilt.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;\u200b08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;35.60439&quot;,&quot;longitude&quot;:&quot;1.8045&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;Tizi Ouzou - Azazga&quot;,&quot;code&quot;:&quot;Z91&quot;,&quot;categorie&quot;:&quot;C&quot;,&quot;adresse&quot;:&quot;Lotissement A, Boulevard Ahmed ZAIDAT n\u00b03, Azazga, Tizi Ouzou&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A15B002R&quot;,&quot;latitude&quot;:&quot;36.74474&quot;,&quot;longitude&quot;:&quot;4.36579&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TIZI OUZOU - Nouvelle Ville&quot;,&quot;code&quot;:&quot;Z96&quot;,&quot;categorie&quot;:&quot;B+&quot;,&quot;adresse&quot;:&quot;Tour Ali OUARAB, Boulevard Krim Belkacem, Nouvelle Ville, Tizi Ouzou.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:30&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;A15B001R&quot;,&quot;latitude&quot;:&quot;36.7025&quot;,&quot;longitude&quot;:&quot;4.05296&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TLEMCEN - El Qods&quot;,&quot;code&quot;:&quot;Z20&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;06, Avenue El Qods, N\u00b018, Kifan, Tlemcen &quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 20:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;34.88953&quot;,&quot;longitude&quot;:&quot;-1.33226&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TLEMCEN - INDEPENDANCE&quot;,&quot;code&quot;:&quot;ZA7&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;18, BOULEVARD DE L\u2019INDEPENDANCE&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00\u200b&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;34.8829&quot;,&quot;longitude&quot;:&quot;-1.31037&quot;,&quot;comment&quot;:&quot;&quot;},{&quot;cds&quot;:&quot;TLEMCEN - Maghnia&quot;,&quot;code&quot;:&quot;Z74&quot;,&quot;categorie&quot;:&quot;&quot;,&quot;adresse&quot;:&quot;10\u00a0RUE IBN ROCHD CENTRE-VILLE\u00a0\u00a0MAGHNIA, TLEMCEN.&quot;,&quot;email&quot;:&quot;service-clientele@djezzy.dz&quot;,&quot;horaires_ouverture&quot;:&quot;08:00 - 18:00&quot;,&quot;vendredi&quot;:&quot;Ferm\u00e9&quot;,&quot;fetes&quot;:&quot;Ouvert&quot;,&quot;code_ouverture&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;34.84731&quot;,&quot;longitude&quot;:&quot;-1.72909&quot;,&quot;comment&quot;:&quot;&quot;}]" data-params="{&quot;Prix&quot;:&quot;Prix&quot;,&quot;Samedi \u00e0 Jeudi&quot;:&quot;Samedi \u00e0 Jeudi&quot;,&quot;Vendredi&quot;:&quot;Vendredi&quot;,&quot;F\u00eates&quot;:&quot;F\u00eates&quot;,&quot;Horaires d&#039;ouverture&quot;:&quot;Horaires d&#039;ouverture&quot;,&quot;Ferm\u00e9&quot;:&quot;Ferm\u00e9&quot;,&quot;Ouvert&quot;:&quot;Ouvert&quot;,&quot;Email&quot;:&quot;Email&quot;,&quot;Adresse&quot;:&quot;Adresse&quot;,&quot;Par semaine&quot;:&quot;Par semaine&quot;,&quot;Par jour&quot;:&quot;Par jour&quot;,&quot;Page(s)&quot;:&quot;Page(s)&quot;,&quot;Minute(s)&quot;:&quot;Minute(s)&quot;,&quot;Email(s)&quot;:&quot;Email(s)&quot;,&quot;T\u00e9l\u00e9chargement(s)&quot;:&quot;T\u00e9l\u00e9chargement(s)&quot;,&quot;Message(s)&quot;:&quot;Message(s)&quot;,&quot;Choisissez une Wilaya&quot;:&quot;Choisissez une Wilaya&quot;,&quot;Choisissez une Commune&quot;:&quot;Choisissez une Commune&quot;,&quot;Couverture pr\u00e9vue pour Mai 2014&quot;:&quot;Couverture pr\u00e9vue pour Mai 2014&quot;,&quot;Nous mettons l\u2019essentiel en \u0153uvre afin de couvrir votre commune prochainement : merci de consulter notre site r\u00e9guli\u00e8rement afin de v\u00e9rifier l\u2019avancement de la couverture 3G dans votre commune&quot;:&quot;Nous mettons l\u2019essentiel en \u0153uvre afin de couvrir votre commune prochainement : merci de consulter notre site r\u00e9guli\u00e8rement afin de v\u00e9rifier l\u2019avancement de la couverture 3G dans votre commune&quot;,&quot;Commune d\u00e9j\u00e0 couverte&quot;:&quot;Commune d\u00e9j\u00e0 couverte&quot;,&quot;Surf sur Internet&quot;:&quot;Surfer sur Internet&quot;,&quot;Regarder une vid\u00e9o&quot;:&quot;Regarder une vid\u00e9o&quot;,&quot;Regarder la TV live&quot;:&quot;Regarder la TV live&quot;,&quot;E-mail re\u00e7u\/envoy\u00e9 avec pi\u00e8ce jointe&quot;:&quot;E-mail re\u00e7u\/envoy\u00e9 avec pi\u00e8ce jointe&quot;,&quot;T\u00e9l\u00e9charger une application&quot;:&quot;T\u00e9l\u00e9charger une application&quot;,&quot;DA&quot;:&quot;DA&quot;,&quot;Choisissez un mod\u00e8le&quot;:&quot;Choisissez mod\u00e8le&quot;,&quot;E-mail re\u00e7u\/envoy\u00e9 sans pi\u00e8ce jointe&quot;:&quot;E-mail re\u00e7u\/envoy\u00e9 sans pi\u00e8ce jointe&quot;,&quot;Skype vid\u00e9o et audio&quot;:&quot;Skype vid\u00e9o et audio&quot;,&quot;Ecouter la music&quot;:&quot;Ecouter la musique&quot;,&quot;R\u00e9seaux sociaux&quot;:&quot;R\u00e9seaux sociaux&quot;,&quot;T\u00e9l\u00e9charger une Applications \/ Jeux \/ chansons&quot;:&quot;T\u00e9l\u00e9charger une Application \/ Jeu \/ chanson&quot;,&quot;compatible-oui&quot;:&quot;Votre appareil est compatible avec la 3G+&quot;,&quot;compatible-non&quot;:&quot;Votre appareil n\u2019est pas compatible avec la 3G+&quot;,&quot;pinImage&quot;:&quot;http:\/\/www.djezzy.dz\/wp-content\/themes\/djezzy\/assets\/images\/pin.png&quot;,&quot;lang&quot;:&quot;fr_FR&quot;,&quot;themeUrl&quot;:&quot;http:\/\/www.djezzy.dz\/wp-content\/themes\/djezzy&quot;}">
+                    @RenderBody()
+
+
+                    </footer>
+                </div><!-- End wrapper -->
+                <script src=@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.2/modernizr.min.js")></script>
+                <script type="text/javascript" src=@Url.Content("~/wp-content/themes/djezzy/assets/js/app.minfb74.js?v=16")></script>
+                <script type="text/javascript" src=@Url.Content("~/wp-content/themes/djezzy/assets/js/jquery.ready.min.js")></script>
+                <!-- TEQ.MON.OK -->
+                <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window, document, 'script','@Url.Content("https://www.google-analytics.com/analytics.js")', 'ga');
+
+    ga('create', 'UA-35211108-4', 'auto');
+    ga('send', 'pageview');
+                </script>
+
+
+</body>
+</html>

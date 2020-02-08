@@ -1,0 +1,36 @@
+c:\users\asus\documents\visual studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.console.exe.config
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.console.exe
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.console.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.data.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.domaine.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.servicepattern.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\Service.dll
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.data.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.domaine.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\pi.servicepattern.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\Service.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\obj\Debug\pi.console.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\obj\Debug\pi.console.exe
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\crm_pi\pi.console\obj\Debug\pi.console.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.console.exe.config
+C:\Users\ASUS\Desktop\crm_pi\pi.console\obj\Debug\pi.console.exe
+C:\Users\ASUS\Desktop\crm_pi\pi.console\obj\Debug\pi.console.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.console.exe
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.console.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.data.dll
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.domaine.dll
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.servicepattern.dll
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\Service.dll
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.data.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.domaine.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\pi.servicepattern.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\Service.pdb
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\crm_pi\pi.console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\crm_pi\pi.console\obj\Debug\pi.console.csprojResolveAssemblyReference.cache

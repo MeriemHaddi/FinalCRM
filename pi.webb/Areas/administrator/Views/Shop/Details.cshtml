@@ -1,0 +1,81 @@
+﻿@model IEnumerable<pi.domaine.Entities.Product>
+
+
+
+@{
+    ViewBag.Title = "DetailsShopProduct";
+    Layout = "~/Areas/administrator/Views/Shared/Shops.cshtml";
+}
+
+
+
+<div class="container-fw container-gray">
+
+    <div id="filterbar-affix" data-spy="affix" data-offset-top="300" class="container-fw container-gray container-compact">
+        <div class="row">
+            <div class="container">
+                <div id="filterbar">
+                    <form class="js-mobile-form" method="post">
+                        <select name="forma" class="custom-select my-select" title="Sélectionnez la marque" onchange="location = this.value;">
+                            <option value="">Choose Category</option>
+
+
+                            <ul class="category text-center">
+                                <li><a>@{Html.RenderAction("_Category", "Category"); } </a></li>
+
+                            </ul>
+
+
+
+                        </select>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fw container-gray container-compact">
+    <div class="container">
+        <div class="row">
+
+            <ul class="product-list">
+                <style>
+                    .product-new:before {
+                        content: "Nouveau";
+                    }
+
+                    .product-promo:after {
+                        content: "Promotion";
+                    }
+                </style>
+                @foreach (var item in Model)
+                {
+
+                    <li class="col-xs-6 col-sm-3">
+                        <a class="product product-new" href="@Url.Action("ProductDescription","Crm", new { id = item.idProduct })">
+                            <img class="product-thumb" @{ string path = "~/Content/Uploads/" + item.Picture;}
+                            <img src="@Url.Content(path)" width="200" height="200" />
+
+                            <h2 class="product-brand">@Html.DisplayFor(modelItem => item.CategoryProduct.CategoryName)</h2>
+
+                            <p class="product-name">@Html.DisplayFor(modelItem => item.Product_Name)</p>
+
+                            <h3 class="product-price">@Html.DisplayFor(modelItem => item.Price)</h3>
+
+
+
+                        </a>
+                    </li>
+                }
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    </div>

@@ -1,0 +1,93 @@
+﻿@model pi.domaine.Entities.Pack
+
+@{
+    ViewBag.Title = "GetPack";
+    Layout = "~/Areas/administrator/Views/Shared/_PacksLayout.cshtml";
+}
+
+
+<div class="container">
+
+    <div style="text-align: center;"><span style="font-size: 50px;"><span style="color: #eb0707;"><strong>@Html.DisplayFor(model => model.Titre)</strong></span><span></span></span></div>
+</div>
+<div class="container">
+
+    <div class="options-tab-table">
+
+        <ul class="nav " role="tablist">
+
+            <li class="col-sm-3 active">
+                <a href="#tab-target-112216" role="tab" data-toggle="tab">
+                </a>
+            </li>
+
+
+        </ul>
+
+        <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane fade in active" id="tab-target-112216">
+
+                <div class="row">
+
+                </div><div class="row">
+
+                    <div class="col-centered col-xs-12 col-sm-4">
+                        <table>
+
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <h4><span style="font-size: 40px;">Description<span></span></span></h4>
+
+                                        <span>
+                                            @Html.DisplayFor(model => model.Description)
+                                        </span>
+
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>
+                                        <h4>sur @Html.DisplayFor(model => model.Periode_Engagement)</h4>
+
+                                        <span>
+                                            Mois
+                                        </span>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h4>Pour @Html.DisplayFor(model => model.Prix) / Mois</h4>
+
+
+                                    </td>
+                                </tr>
+
+
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <a href="@Url.Action("listProduits","Packs", new { id = Model.Id_Pack })" class=" btn btn-lg btn-primary "> Voir les produits  </a>
+</div>

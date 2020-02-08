@@ -1,0 +1,32 @@
+﻿@model IEnumerable<pi.domaine.Entities.Product>
+@{
+    ViewBag.Title = "Mobiles";
+    Layout = "~/Areas/administrator/Views/Shared/_MobilesLayout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+
+    <li class="col-xs-6 col-sm-3">
+        <a class="product product-new" href="@Url.Action("ProductDescription", new { id = item.idProduct })">
+            <img class="product-thumb" @{ string path = "~/Content/Uploads/" + item.Picture;}
+            <img src="@Url.Content(path)" width="200" height="200" />
+
+            <h2 class="product-brand">@Html.DisplayFor(modelItem => item.CategoryProduct.CategoryName)</h2>
+
+            <p class="product-name">@Html.DisplayFor(modelItem => item.Product_Name)</p>
+
+            <h3 class="product-price">@Html.DisplayFor(modelItem => item.Price)</h3>
+
+
+
+
+        </a>
+    </li>
+}
+
+@{
+    ViewBag.Title = "Mobiles";
+    Layout = "~/Areas/administrator/Views/Shared/_MobilesLayout.cshtml";
+}
+

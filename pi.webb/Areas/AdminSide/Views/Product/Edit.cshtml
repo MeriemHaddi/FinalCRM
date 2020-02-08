@@ -1,0 +1,101 @@
+﻿@model pi.domaine.Entities.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/AdminSide/Views/Shared/_EditLayout.cshtml";
+}
+
+
+
+@using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Product</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <h5 class="control-label col-md-2">Product Name</h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Product_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Product_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <h5 class="control-label col-md-2">Category</h5>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.id_Category, new SelectList(ViewBag.Category, "id_Category", "CategoryName "), new { htmlAttributes = new { @class = "selectpicker border rounded" } })
+                @Html.ValidationMessageFor(model => model.id_Category, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2">Description</h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2">Price</h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2"> Shop</h5>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.id_Shop, new SelectList(ViewBag.Shop, "id_Shop", "shop_name "), new { htmlAttributes = new { @class = "selectpicker border rounded" } })
+                @Html.ValidationMessageFor(model => model.id_Shop, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2"> Quantity in</h5>
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.In_Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.In_Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2"> Quantity </h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="editor-label">
+            <h5 class="control-label col-md-2"> Picture</h5>
+        </div>
+        <div class="editor-field">
+            <div class="col-md-10">
+                @Html.TextBox("file", "", new { type = "file" })
+                @Html.ValidationMessageFor(model => model.Picture)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Update" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

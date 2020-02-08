@@ -1,0 +1,37 @@
+﻿@model IEnumerable<pi.domaine.Entities.OffrePrepayee>
+
+@{
+    ViewBag.Title = "ListeOffres";
+    Layout = "~/Areas/administrator/Views/Shared/_crmLayout.cshtml";
+}
+
+<section id="home-news">
+
+    <h2 class="sc-title sc-center">Liste des Offres prépayées</h2>
+
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-4">
+                <a title="" target="_self" class="bc invert" href="djezzy/evenements/evenements/des-etudiants-partagent-un-moment-privilegie-avec-matthieu/index.html">
+                    <div class="bc-thumb">
+                        <h2 style="" class="expt"> @Html.DisplayFor(modelItem => item.Description)</h2>
+
+                        @{ string path = "~/Content/Uploads/" + item.img;}
+                        <img src="@Url.Content(path)" width="100" height="100" />
+                    </div>
+                    <div class="bc-titles">
+                        <h2 class="bc-title">@Html.DisplayFor(modelItem => item.Titre)</h2>
+                        <a href="@Url.Action("DetailsOffreClient","OffrePrepayees", new { id = item.Id_Offre })"> Lire </a>
+
+                    </div>
+                </a>
+            </div>
+
+        }
+    </div>
+
+</section>
+
+

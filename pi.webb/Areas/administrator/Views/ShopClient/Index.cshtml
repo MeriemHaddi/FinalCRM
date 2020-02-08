@@ -1,0 +1,53 @@
+﻿@model IEnumerable<pi.domaine.Entities.Shop>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/administrator/Views/Shared/Boutiques.cshtml";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-sm-3 list-cds">
+    <div class="location">
+
+
+
+    </div>
+
+    <div class="js-cds-items items">
+        @foreach (var item in Model)
+        {
+            <a data-markerid="@Html.DisplayFor(modelItem => item.id_Shop)" href="#" class="item marker-link">
+                <h3>@Html.DisplayFor(modelItem => item.shop_name)</h3>
+                <strong>Adresse</strong>
+                <address>
+                    @Html.DisplayFor(modelItem => item.Shop_Location)
+                </address>
+            </a>
+
+        }
+
+
+    </div>
+</div>
+<div id="cds-canvas" class="col-sm-9 span"></div>
+
+
+
+
+
+
+
+

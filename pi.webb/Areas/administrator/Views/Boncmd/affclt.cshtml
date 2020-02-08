@@ -1,0 +1,103 @@
+﻿@model IEnumerable<pi.domaine.Entities.Boncmd>
+
+@{
+    ViewBag.Title = "affclt";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li class="active">Produit</li>
+
+            <li>
+                @Html.ActionLink("Panier", "panii", "Lignecmd")           |
+
+                @Html.ActionLink("Mes devis", "affdevis", "Factdev")          |
+
+                @Html.ActionLink("Historique", "histo", "Factdev")          |
+
+                @Html.ActionLink("Mes bons", "affclt", "Boncmd")
+            </li>
+        </ol>
+
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Bons commande</h1>
+
+
+        </div>
+    </div>
+</div>
+
+
+<table class="table">
+    <tr>
+      
+        <th>
+            @Html.DisplayNameFor(model => model.reference)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prixb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date) limite
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codeqr)
+        </th>
+     
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.reference)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prixb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date)
+        </td>
+        <td>
+            @if (item.etat == 0)
+            {
+                <font color="yellow">en cours</font>
+     
+            }
+            else if (item.etat == 1)
+            {
+                <font color="red">annulé</font>
+            }
+            else if (item.etat == 2)
+            {
+                <font color="green">payé</font>
+            }
+   
+        </td>
+        <td>
+            @Html.ActionLink("Imprimer", "printAll", new { id = item.BoncmdId })
+            
+        </td>
+       
+    </tr>
+}
+
+</table>

@@ -1,0 +1,108 @@
+﻿@model IEnumerable<pi.domaine.Entities.lignecmd>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/administrator/Views/Shared/Head_Layout.cshtml";
+}
+
+
+<div class="title-bar">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a class="breadcrumb-home" href="../../index.html"><span class="icon-Home_Page"></span><span class="bch-txt">Accueil</span></a>
+            </li>
+
+            <li class="active">Produit</li>
+
+            <li>
+                @Html.ActionLink("Panier", "panii", "Lignecmd")           |
+
+                @Html.ActionLink("Mes devis", "affdevis", "Factdev")          |
+
+                @Html.ActionLink("Historique", "histo", "Factdev")          |
+
+                @Html.ActionLink("Mes bons", "affclt", "Boncmd")
+            </li>
+        </ol>
+
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Devis</h1>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<p>
+    
+    @Html.ActionLink("Ajouter produit au devis", "Creatl","Lignecmd", new { id = @ViewBag.dvid }, null)
+</p>
+<table class="table">
+    <tr>
+   
+        <th>
+            @Html.DisplayNameFor(model => model.product.Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product.Product_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.product.Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product.Product_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix)
+        </td>
+        <td>
+            @if (item.quantite > item.product.Quantity)
+            {
+                <font color="red">Non disponible</font>
+                //felssa mail lel admin
+                @Html.ActionLink("Mail", "maild", new { id = item.LignecmdId })
+            }
+            else if (item.product.Quantity - item.quantite >= 0 && item.product.Quantity - item.quantite <= 3)
+            {
+                <font color="yellow">bientot non dispo</font>
+            }
+            else
+            {
+                <font color="green">disponible</font>
+            }
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditL", new { id=item.LignecmdId }) |  
+            @Html.ActionLink("Delete", "Delete", "Lignecmd", new { id = item.LignecmdId }, null)
+
+        </td>
+    </tr>
+}
+
+</table>
+
+@ViewBag.prixtot

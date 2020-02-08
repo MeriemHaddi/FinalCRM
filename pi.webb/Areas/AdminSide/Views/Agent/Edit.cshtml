@@ -1,0 +1,72 @@
+﻿@model pi.domaine.Entities.Agent
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/AdminSide/Views/Shared/Agents.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit", "Agents", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <h5 class="control-label col-md-2">Name</h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2"> Post</h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.post, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.post, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2"> Phone number</h5>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.tel, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.tel, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h5 class="control-label col-md-2"> Shop</h5>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.id_Shop, new SelectList(ViewBag.Shop, "id_Shop", "shop_name "), new { htmlAttributes = new { @class = "selectpicker border rounded" } })
+                @Html.ValidationMessageFor(model => model.id_Shop, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="editor-label">
+            <h5 class="control-label col-md-2"> Picture</h5>
+        </div>
+        <div class="editor-field">
+            <div class="col-md-10">
+                @Html.TextBox("file", "", new { type = "file" })
+                @Html.ValidationMessageFor(model => model.LName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Edit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

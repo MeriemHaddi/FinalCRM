@@ -1,0 +1,54 @@
+﻿@model IEnumerable<pi.domaine.Entities.Shop>
+
+@{
+
+    Layout = "~/Areas/AdminSide/Views/Shared/_ListShopLayout.cshtml";
+}
+<center>
+    @using (Html.BeginForm())
+    {<table>
+            <tr>
+                <td>
+                    <div>
+                        Search Products: @Html.TextBox("searchString")
+
+                    </div>
+                </td>
+                <td>                 <input type="submit" value="Search" id="submit" />             </td>
+            </tr>
+        </table>}
+</center>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model)
+{
+
+    <li class="media">
+
+        <div class="media-left">
+            <div class="pubdate">
+
+                <span class="month">@Html.DisplayFor(modelItem => item.Shop_Location)</span>
+
+            </div>
+            <a>See Location</a>
+            @Html.ActionLink("See Statistics", "Dashboard", new { id = item.id_Shop })
+        </div>
+        <div class="media-body">
+            <h2 class="media-heading">@Html.DisplayFor(modelItem => item.shop_name)</h2>
+            <span class="day">Oprning :@Html.DisplayFor(modelItem => item.Opening_Time)</span><br />
+            <span class="day">Closing:@Html.DisplayFor(modelItem => item.closing_Time)</span>
+            <p>Services:@Html.DisplayFor(modelItem => item.Service)</p>
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.id_Shop }, new { @class = "btn btn-primary btn-xs" })
+            @Html.ActionLink("Products", "Details", new { id = item.id_Shop }, new { @class = "btn btn-primary btn-xs" })
+            @Html.ActionLink("Agents", "DetailsAgent", new { id = item.id_Shop }, new { @class = "btn btn-primary btn-xs" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.id_Shop }, new { @class = "btn btn-primary btn-xs" })
+
+        </div>
+    </li>
+}
+
+

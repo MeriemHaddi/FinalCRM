@@ -1,0 +1,38 @@
+﻿@model IEnumerable<pi.domaine.Entities.Agent>
+@{
+    ViewBag.Title = "DetailsAgent";
+    Layout = "~/Areas/administrator/Views/Shared/Shops.cshtml";
+}
+
+
+<div class="container-fw">
+    <div class="container">
+        <div id="direction-hp" class="direction-hp">
+
+            <h2 class="sc-title sc-center">
+                THE MANAGEMENT TEAM
+            </h2>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+
+                    <div class="col-sm-4">
+                        <a href="matthieu-galvani/index.html">
+                            <div class="head">
+                                <img class="product-thumb" @{ string path = "~/Content/Uploads/" + item.LName;}
+                                <img src="@Url.Content(path)" width="200" height="200" />
+                            </div>
+                            <div class="content">
+                                <h3 class="direction-member-name">@Html.DisplayFor(modelItem => item.FName)</h3>
+                                <span>@Html.DisplayFor(modelItem => item.post) </span>
+
+                            </div>
+                        </a>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
